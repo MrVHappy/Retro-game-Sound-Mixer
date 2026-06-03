@@ -4,6 +4,12 @@ project(RetroSoundMixer)
 
 set(CMAKE_CXX_STANDARD 17)
 
+find_package(FluidSynth CONFIG REQUIRED)
+
 add_executable(RetroSoundMixer
     src/main.cpp
+)
+
+target_link_libraries(RetroSoundMixer PRIVATE
+    FluidSynth::libfluidsynth
 )
