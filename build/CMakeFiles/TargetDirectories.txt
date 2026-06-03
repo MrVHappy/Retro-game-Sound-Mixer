@@ -1,0 +1,3 @@
+C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/RetroSoundMixer.dir
+C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/ZERO_CHECK.dir

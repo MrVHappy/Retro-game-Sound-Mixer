@@ -1,0 +1,10 @@
+^C:\USERS\SEBASTIAN\ONEDRIVE\DOCUMENTS\GITHUB\RETRO-GAME-SOUND-MIXER\BUILD\CMAKEFILES\6957A2D48637ACF74CFFB3209343C5DA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer -BC:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/RetroSoundMixer.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
