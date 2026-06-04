@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
+#include <list>
 
 #if defined(_WIN32)
 #include <windows.h>
@@ -25,7 +26,7 @@ int main() {
     fluid_settings_t* settings = NULL;
     fluid_synth_t* synth = NULL;
     fluid_audio_driver_t* adriver = NULL;
-
+    std::list<int> sequence;
     int sfont_ID, i, key;
     int option = 4;
     std::string input;
@@ -51,13 +52,8 @@ int main() {
             }
         break;
         
-        
-
-
     }
-    
-
-    
+        
     // Create settings
     settings = new_fluid_settings();
 
@@ -100,11 +96,51 @@ int main() {
 
         key = 60 + (int)(12.0f * rand() / (float)RAND_MAX);
 
+        std::cout << "playing note:" << key << std::endl;
+
         fluid_synth_noteon(synth, 0, key, 80);
 
         sleep(1);
 
         fluid_synth_noteoff(synth, 0, key);
+        
+    }
+    char note;
+    bool exit = false;
+    
+    while (!exit){
+        std::cout << "Please Play a note\n A(C),S(D),D(E),F(F),Q(EXIT)" << std::endl;
+        std::cin >> note;
+        switch(toupper(note)){
+            case 'A':
+                key = 60;
+                sequence.push_back(key);
+                break;
+            case 'S':
+                key = 62;
+                break;
+            case 'D':
+                key = 64;
+                break;
+            case 'F':
+                key = 65;
+                break;
+            case 'Q':
+                exit = true;
+                continue;
+            default:
+                continue;
+            
+        }
+        sequence.push_back(key);
+    }
+    for (int seq : sequence){
+        std::cout << seq << " ";
+        fluid_synth_noteon(synth, 0, seq, 80);
+
+        sleep(1);
+
+        fluid_synth_noteoff(synth, 0, seq);
     }
 
 err:
