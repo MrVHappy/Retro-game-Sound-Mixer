@@ -101,7 +101,7 @@ events:
       The output was:
       0
       MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-      Build started 05/06/2026 11:43:17.
+      Build started 05/06/2026 14:43:26.
       
       Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\4.3.3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -139,7 +139,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.88
+      Time Elapsed 00:00:00.83
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -2144,7 +2144,7 @@ events:
       The output was:
       0
       MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-      Build started 05/06/2026 11:43:18.
+      Build started 05/06/2026 14:43:27.
       
       Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -2182,7 +2182,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.89
+      Time Elapsed 00:00:00.82
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -3243,8 +3243,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-8b5sz9"
-      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-8b5sz9"
+      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-f2lzi0"
+      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-f2lzi0"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -3258,33 +3258,33 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-8b5sz9'
+        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-f2lzi0'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_18ad2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9a07a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 05/06/2026 11:43:19.
+        Build started 05/06/2026 14:43:28.
         
-        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8b5sz9\\cmTC_18ad2.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f2lzi0\\cmTC_9a07a.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8b5sz9\\Debug\\".
-          Creating directory "cmTC_18ad2.dir\\Debug\\cmTC_18ad2.tlog\\".
+          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f2lzi0\\Debug\\".
+          Creating directory "cmTC_9a07a.dir\\Debug\\cmTC_9a07a.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_18ad2.dir\\Debug\\cmTC_18ad2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_18ad2.dir\\Debug\\cmTC_18ad2.tlog\\unsuccessfulbuild".
+          Creating "cmTC_9a07a.dir\\Debug\\cmTC_9a07a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_9a07a.dir\\Debug\\cmTC_9a07a.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_18ad2.dir\\Debug\\\\" /Fd"cmTC_18ad2.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_9a07a.dir\\Debug\\\\" /Fd"cmTC_9a07a.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36246 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_18ad2.dir\\Debug\\\\" /Fd"cmTC_18ad2.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_9a07a.dir\\Debug\\\\" /Fd"cmTC_9a07a.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8b5sz9\\Debug\\cmTC_18ad2.exe" /INCREMENTAL /ILK:"cmTC_18ad2.dir\\Debug\\cmTC_18ad2.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-8b5sz9/Debug/cmTC_18ad2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-8b5sz9/Debug/cmTC_18ad2.lib" /MACHINE:X64  /machine:x64 cmTC_18ad2.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_18ad2.vcxproj -> C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8b5sz9\\Debug\\cmTC_18ad2.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f2lzi0\\Debug\\cmTC_9a07a.exe" /INCREMENTAL /ILK:"cmTC_9a07a.dir\\Debug\\cmTC_9a07a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-f2lzi0/Debug/cmTC_9a07a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-f2lzi0/Debug/cmTC_9a07a.lib" /MACHINE:X64  /machine:x64 cmTC_9a07a.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_9a07a.vcxproj -> C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f2lzi0\\Debug\\cmTC_9a07a.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_18ad2.dir\\Debug\\cmTC_18ad2.tlog\\unsuccessfulbuild".
-          Touching "cmTC_18ad2.dir\\Debug\\cmTC_18ad2.tlog\\cmTC_18ad2.lastbuildstate".
-        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8b5sz9\\cmTC_18ad2.vcxproj" (default targets).
+          Deleting file "cmTC_9a07a.dir\\Debug\\cmTC_9a07a.tlog\\unsuccessfulbuild".
+          Touching "cmTC_9a07a.dir\\Debug\\cmTC_9a07a.tlog\\cmTC_9a07a.lastbuildstate".
+        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f2lzi0\\cmTC_9a07a.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
@@ -3330,8 +3330,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-vwt5qn"
-      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-vwt5qn"
+      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-7l9994"
+      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-7l9994"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -3346,39 +3346,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-vwt5qn'
+        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-7l9994'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d3109.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_71bb5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 05/06/2026 11:43:20.
+        Build started 05/06/2026 14:43:28.
         
-        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vwt5qn\\cmTC_d3109.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7l9994\\cmTC_71bb5.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vwt5qn\\Debug\\".
-          Creating directory "cmTC_d3109.dir\\Debug\\cmTC_d3109.tlog\\".
+          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7l9994\\Debug\\".
+          Creating directory "cmTC_71bb5.dir\\Debug\\cmTC_71bb5.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_d3109.dir\\Debug\\cmTC_d3109.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_d3109.dir\\Debug\\cmTC_d3109.tlog\\unsuccessfulbuild".
+          Creating "cmTC_71bb5.dir\\Debug\\cmTC_71bb5.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_71bb5.dir\\Debug\\cmTC_71bb5.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_d3109.dir\\Debug\\\\" /Fd"cmTC_d3109.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_71bb5.dir\\Debug\\\\" /Fd"cmTC_71bb5.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36246 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_d3109.dir\\Debug\\\\" /Fd"cmTC_d3109.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_71bb5.dir\\Debug\\\\" /Fd"cmTC_71bb5.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vwt5qn\\Debug\\cmTC_d3109.exe" /INCREMENTAL /ILK:"cmTC_d3109.dir\\Debug\\cmTC_d3109.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-vwt5qn/Debug/cmTC_d3109.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-vwt5qn/Debug/cmTC_d3109.lib" /MACHINE:X64  /machine:x64 cmTC_d3109.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_d3109.vcxproj -> C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vwt5qn\\Debug\\cmTC_d3109.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7l9994\\Debug\\cmTC_71bb5.exe" /INCREMENTAL /ILK:"cmTC_71bb5.dir\\Debug\\cmTC_71bb5.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-7l9994/Debug/cmTC_71bb5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-7l9994/Debug/cmTC_71bb5.lib" /MACHINE:X64  /machine:x64 cmTC_71bb5.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_71bb5.vcxproj -> C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7l9994\\Debug\\cmTC_71bb5.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_d3109.dir\\Debug\\cmTC_d3109.tlog\\unsuccessfulbuild".
-          Touching "cmTC_d3109.dir\\Debug\\cmTC_d3109.tlog\\cmTC_d3109.lastbuildstate".
-        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vwt5qn\\cmTC_d3109.vcxproj" (default targets).
+          Deleting file "cmTC_71bb5.dir\\Debug\\cmTC_71bb5.tlog\\unsuccessfulbuild".
+          Touching "cmTC_71bb5.dir\\Debug\\cmTC_71bb5.tlog\\cmTC_71bb5.lastbuildstate".
+        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7l9994\\cmTC_71bb5.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.51
+        Time Elapsed 00:00:00.41
         
       exitCode: 0
   -

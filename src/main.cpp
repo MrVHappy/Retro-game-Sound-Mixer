@@ -29,6 +29,12 @@
 
 int main() {
 
+    std::string file;
+    std::string sound_font_file;
+    std::cout << "Please enter file location of MIDI file" << std::endl;
+    std::getline(std::cin, file);
+    std::cout << "Please enter file location of sound font file" << std::endl;
+    std::getline(std::cin, sound_font_file);
     fluid_settings_t* settings = NULL;
     fluid_synth_t* synth = NULL;
     fluid_audio_driver_t* adriver = NULL;
@@ -38,28 +44,28 @@ int main() {
     int option = 4;
     std::string input;
     const char* FONT_TYPE = nullptr;
-    while(true){
-        std::cout << "Please select the following options: \n1.\tMega-drive/Genesis\n2.\tSNES \n3.\tNES" << std::endl;
-        std::cin >> input;
-        option = std::stoi(input);
+    // while(true){
+    //     std::cout << "Please select the following options: \n1.\tMega-drive/Genesis\n2.\tSNES \n3.\tNES" << std::endl;
+    //     std::cin >> input;
+    //     option = std::stoi(input);
         
-        switch(option){
-            case 1:
-                FONT_TYPE = MEGA_DRIVE;
-                break;
-            case 2:
-                FONT_TYPE = SNES;
-                break;
-            case 3:
-                FONT_TYPE = NES;
-                break;
-            default:
-                std::cout << "INVALID OPTION PLEASE CHOOSE AGAIN" << std::endl;
-                continue;
-            }
-        break;
+    //     switch(option){
+    //         case 1:
+    //             FONT_TYPE = MEGA_DRIVE;
+    //             break;
+    //         case 2:
+    //             FONT_TYPE = SNES;
+    //             break;
+    //         case 3:
+    //             FONT_TYPE = NES;
+    //             break;
+    //         default:
+    //             std::cout << "INVALID OPTION PLEASE CHOOSE AGAIN" << std::endl;
+    //             continue;
+    //         }
+    //     break;
         
-    }
+    // }
         
     // Create settings
     settings = new_fluid_settings();
@@ -80,7 +86,7 @@ int main() {
     // Load SoundFont
     std::cout << "Loading SF2..." << std::endl;
 
-    sfont_ID = fluid_synth_sfload(synth,FONT_TYPE, 1);
+    sfont_ID = fluid_synth_sfload(synth,sound_font_file.c_str(), 1);
 
     if (sfont_ID == FLUID_FAILED) {
         puts("Loading SoundFont failed!");
@@ -102,7 +108,7 @@ int main() {
         goto err;
     }
 
-    fluid_player_add(player, EXAMPLE_MIDI);
+    fluid_player_add(player, file.c_str());
 
     fluid_player_play(player);
     fluid_player_join(player);
