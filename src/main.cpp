@@ -1,3 +1,8 @@
+// references: 
+// https://www.fluidsynth.org/wiki/api/examples/example/
+// https://www.fluidsynth.org/api/MIDIPlayer.html
+// 
+
 #include <fluidsynth.h>
 #include <iostream>
 #include <string>
@@ -15,6 +20,7 @@
 #define NES "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/sound_fonts/NES/8bitsf.SF2"
 #define SNES "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/sound_fonts/SNES/SuperNintendoEntertainmentSystemV1.2.sf2"
 
+#define EXAMPLE_MIDI "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/Demo Midis/Video Game/bubble-crab-s-stage.mid"
 #else
 #include <stdlib.h>
 #include <unistd.h>
@@ -26,6 +32,7 @@ int main() {
     fluid_settings_t* settings = NULL;
     fluid_synth_t* synth = NULL;
     fluid_audio_driver_t* adriver = NULL;
+    fluid_player_t* player = NULL;
     std::list<int> sequence;
     int sfont_ID, i, key;
     int option = 4;
@@ -88,6 +95,17 @@ int main() {
         goto err;
     }
 
+    // create the player
+    player = new_fluid_player(synth);
+    if (player == NULL){
+        puts("Failed to create player");
+        goto err;
+    }
+
+    fluid_player_add(player, EXAMPLE_MIDI);
+
+    fluid_player_play(player);
+    fluid_player_join(player);
     // Seed random number generator
     srand(getpid());
 
@@ -148,6 +166,6 @@ err:
     delete_fluid_audio_driver(adriver);
     delete_fluid_synth(synth);
     delete_fluid_settings(settings);
-
+    delete_fluid_player(player);
     return 0;
 }
