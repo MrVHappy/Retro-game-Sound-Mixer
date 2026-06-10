@@ -4,6 +4,7 @@
 // 
 
 #include <fluidsynth.h>
+#include <MidiFile.h>
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -33,6 +34,14 @@ int main() {
     std::string sound_font_file;
     std::cout << "Please enter file location of MIDI file" << std::endl;
     std::getline(std::cin, file);
+
+    smf::MidiFile midi_file;
+    midi_file.read(file);
+
+    int num_tracks = midi_file.getTrackCount();
+
+    std::cout << "Here are the number of tracks: " << num_tracks << std::endl;
+    
     std::cout << "Please enter file location of sound font file" << std::endl;
     std::getline(std::cin, sound_font_file);
     fluid_settings_t* settings = NULL;
@@ -67,7 +76,7 @@ int main() {
     sfont_ID = fluid_synth_sfload(synth,sound_font_file.c_str(), 1);
 
     if (sfont_ID == FLUID_FAILED) {
-        puts("Loading SoundFont failed!");
+        puts("Loading SoundFont failed! Check the file path and try again.");
         goto err;
     }
 
@@ -86,13 +95,20 @@ int main() {
         goto err;
     }
 
-    fluid_player_add(player, file.c_str());
+    if (fluid_player_add(player, file.c_str()) != FLUID_OK) {
+        puts("Failed to add MIDI file to player! Check the file path and try again.");
+        goto err;
+    }
 
-    fluid_player_play(player);
+    if (fluid_player_play(player) != FLUID_OK) {
+        puts("Failed to play MIDI file");
+        goto err;
+    }
     fluid_player_join(player);
-    
 err:
-
+    if (player != NULL) {
+        delete_fluid_player(player);
+    }
     if (adriver != NULL) {
         delete_fluid_audio_driver(adriver);
     }
@@ -102,8 +118,6 @@ err:
     if (settings != NULL) {
         delete_fluid_settings(settings);
     }
-    if (player != NULL) {
-        delete_fluid_player(player);
-    }
+    
     return 0;
 }
