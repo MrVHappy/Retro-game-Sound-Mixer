@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\midifile\src\Options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\midifile\src\Binasc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\midifile\src\MidiEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\midifile\src\MidiEventList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\midifile\src\MidiFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\midifile\src\MidiMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\midifile\include\Binasc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\midifile\include\MidiEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\midifile\include\MidiEventList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\midifile\include\MidiFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\midifile\include\MidiMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\midifile\include\Options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\midifile\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2A1C59F9-3506-315F-A65C-80A10BFF02AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2A6F6E16-2C2D-309D-97BE-1651D3B4C339}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

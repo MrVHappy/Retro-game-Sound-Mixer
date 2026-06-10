@@ -7,8 +7,69 @@
 		<BuildType Name="RelWithDebInfo"/>
 		<Platform Name="x64"/>
 	</Configurations>
+	<Project Path="midifile/80off.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="a60da55b-5e87-3c6d-97a0-03d0ca631636">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
 	<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="13b01353-b45e-3458-8d08-f215db2bf83d" DefaultStartup="true">
+		<BuildDependency Project="midifile/80off.vcxproj"/>
 		<BuildDependency Project="RetroSoundMixer.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/asciimidi.vcxproj"/>
+		<BuildDependency Project="midifile/base642midi.vcxproj"/>
+		<BuildDependency Project="midifile/binasc.vcxproj"/>
+		<BuildDependency Project="midifile/chaninfo.vcxproj"/>
+		<BuildDependency Project="midifile/createmidifile.vcxproj"/>
+		<BuildDependency Project="midifile/createmidifile2.vcxproj"/>
+		<BuildDependency Project="midifile/deltatimes.vcxproj"/>
+		<BuildDependency Project="midifile/drumtab.vcxproj"/>
+		<BuildDependency Project="midifile/durations.vcxproj"/>
+		<BuildDependency Project="midifile/extractlyrics.vcxproj"/>
+		<BuildDependency Project="midifile/maxtick.vcxproj"/>
+		<BuildDependency Project="midifile/mid2hex.vcxproj"/>
+		<BuildDependency Project="midifile/mid2mat.vcxproj"/>
+		<BuildDependency Project="midifile/mid2mtb.vcxproj"/>
+		<BuildDependency Project="midifile/mid2svg.vcxproj"/>
+		<BuildDependency Project="midifile/midi2base64.vcxproj"/>
+		<BuildDependency Project="midifile/midi2binasc.vcxproj"/>
+		<BuildDependency Project="midifile/midi2chords.vcxproj"/>
+		<BuildDependency Project="midifile/midi2melody.vcxproj"/>
+		<BuildDependency Project="midifile/midi2notes.vcxproj"/>
+		<BuildDependency Project="midifile/midi2skini.vcxproj"/>
+		<BuildDependency Project="midifile/midi2text.vcxproj"/>
+		<BuildDependency Project="midifile/midicat.vcxproj"/>
+		<BuildDependency Project="midifile/mididiss.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+		<BuildDependency Project="midifile/midimean.vcxproj"/>
+		<BuildDependency Project="midifile/midimixup.vcxproj"/>
+		<BuildDependency Project="midifile/midirange.vcxproj"/>
+		<BuildDependency Project="midifile/midireg.vcxproj"/>
+		<BuildDependency Project="midifile/miditime.vcxproj"/>
+		<BuildDependency Project="midifile/midiuniq.vcxproj"/>
+		<BuildDependency Project="midifile/mts-type2.vcxproj"/>
+		<BuildDependency Project="midifile/mts-type9.vcxproj"/>
+		<BuildDependency Project="midifile/perfid.vcxproj"/>
+		<BuildDependency Project="midifile/readstatus.vcxproj"/>
+		<BuildDependency Project="midifile/redexpress.vcxproj"/>
+		<BuildDependency Project="midifile/removenote.vcxproj"/>
+		<BuildDependency Project="midifile/retick.vcxproj"/>
+		<BuildDependency Project="midifile/shutak.vcxproj"/>
+		<BuildDependency Project="midifile/smfdur.vcxproj"/>
+		<BuildDependency Project="midifile/stretch.vcxproj"/>
+		<BuildDependency Project="midifile/sysextest.vcxproj"/>
+		<BuildDependency Project="midifile/temper.vcxproj"/>
+		<BuildDependency Project="midifile/text2midi.vcxproj"/>
+		<BuildDependency Project="midifile/textmidi.vcxproj"/>
+		<BuildDependency Project="midifile/toascii.vcxproj"/>
+		<BuildDependency Project="midifile/tobin.vcxproj"/>
+		<BuildDependency Project="midifile/tobinary.vcxproj"/>
+		<BuildDependency Project="midifile/todec.vcxproj"/>
+		<BuildDependency Project="midifile/tohex.vcxproj"/>
+		<BuildDependency Project="midifile/type0.vcxproj"/>
+		<BuildDependency Project="midifile/vlv.vcxproj"/>
+	</Project>
+	<Project Path="INSTALL.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="b9c14683-2ec3-3e00-b104-7cfad25337fe">
+		<BuildDependency Project="ALL_BUILD.vcxproj"/>
 		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
 		<Build Solution="Debug|*" Project="false"/>
 		<Build Solution="Release|*" Project="false"/>
@@ -17,6 +78,214 @@
 	</Project>
 	<Project Path="RetroSoundMixer.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="53757ee8-c111-3159-9069-5d9472613ed2">
 		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
 	</Project>
 	<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="75b58daf-a40d-36cc-920a-de011f82f06b"/>
+	<Project Path="midifile/asciimidi.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="3cd32991-51c4-3766-afbf-28192f744caf">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/base642midi.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="57e1dadc-7330-393e-909f-c5e0ba2e1cb0">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/binasc.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="6f48cdc1-9e7b-361f-8d6e-8d338bdb61ef">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/chaninfo.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="8019b8b2-1373-3ac1-834c-4dfe38251497">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/createmidifile.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="87c47a5a-4b79-3b69-aaa8-83d595ca6d69">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/createmidifile2.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="77aaca56-ef41-31b8-954d-6cce9b8f1fa8">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/deltatimes.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="c16ccea9-9142-3e66-9929-f2f28b216230">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/drumtab.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="73b34ded-e615-302b-9c9c-ddd8e062c3a2">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/durations.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="0d1fc6ed-3dab-35f7-8d8e-32a99ac66d96">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/extractlyrics.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="00f0e1c9-a8af-3cd5-a236-e2162babe08d">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/maxtick.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="2ac6c574-057d-3643-9e8d-ebe1029993cd">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/mid2hex.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="93298661-b5b9-3cd4-965f-d8c7723a9120">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/mid2mat.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="2b6e8565-a938-3c1a-8192-e8df4171339f">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/mid2mtb.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="11783019-6ad7-387e-8ef5-a7b9b7bc703f">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/mid2svg.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="957ff84e-8b39-3f3d-b5cc-07e13a5fbccd">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midi2base64.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="c7b8e4fe-3b98-382c-a745-b0706bddb39f">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midi2binasc.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="4b5d1784-c61c-3c68-abad-5ee1f3a89be2">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midi2chords.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="47edf8a8-9691-3864-9712-6713aae49129">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midi2melody.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="4d13655d-9750-3273-8ff6-0b53c95428db">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midi2notes.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="0b51e9e3-881c-3066-91ae-841e44f38eea">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midi2skini.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="72ca224d-1392-3b26-9874-ea9a59503718">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midi2text.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="bd957dec-07e9-33b1-87f4-9562c5097768">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midicat.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="e735385a-e90d-302f-bbdd-d6536e6b98fb">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/mididiss.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="cb1687b2-2678-3394-b762-451205b78adb">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midifile.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="8b8e1971-c647-3ec1-a608-c0713b57b8f3">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midimean.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="8368ad70-894a-36fa-affd-e2643495c6e5">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midimixup.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="f62c5bb7-c7b6-3e84-87d9-13c2739e5ff4">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midirange.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="e50d08a5-ff42-3a80-bdc8-2527f39480c8">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midireg.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="fb380252-0065-3309-b95f-7a6e06b94966">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/miditime.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="cad93f72-b34d-3de9-8408-9a9905e73cd5">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/midiuniq.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="afd022b0-5339-370b-94aa-4d1f29b14fd6">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/mts-type2.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="d1d1d3c0-5a59-3d0f-bd84-f35943d08a72">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/mts-type9.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="fc6474d0-27cf-349c-92b6-de33b3005c54">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/perfid.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="e78f7210-a049-3e22-9920-473243e168e0">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/readstatus.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="ba79b40f-e8fe-33d5-9d4e-fb1f880e4f9f">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/redexpress.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="f13f57f2-c282-35fc-a1e3-1e01e0ddcb84">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/removenote.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="f97db170-31ce-30cb-a7a8-35d642fef410">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/retick.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="9a0d42e4-323f-33ea-b38c-b38723e9cc62">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/shutak.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="c3242d59-727e-33bc-b52a-9cb385b9037c">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/smfdur.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="3a1a8bd1-4cdb-3886-a60b-08efdbdb2d13">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/stretch.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="3f767711-3ecf-39b9-88ec-7758d48b98c4">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/sysextest.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="6cdc5f3e-7a2f-3170-bdc8-5c42c310b1f0">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/temper.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="da97770b-e655-3a50-bc22-884c12db6fdb">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/text2midi.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="5a0c71f9-1a15-33f2-b642-80486125fe5a">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/textmidi.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="c0a61cbc-412d-38f9-bcd1-e5b0fe4bef2e">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/toascii.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="4496de8c-0ef0-3c86-bed0-1179e82282fd">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/tobin.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="dcfdc794-0049-3b25-84c8-c9518b0300f2">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/tobinary.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="8965ab69-86d6-384d-a90a-732879d42d6b">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/todec.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="981793f2-1b5b-3948-b209-3d6ebc296472">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/tohex.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="4b41d87f-03e1-35cc-9959-618bf6c8e2a8">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/type0.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="e87b971c-cf72-3076-a480-ed55715ad2a8">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
+	<Project Path="midifile/vlv.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="b809c004-a0b7-3e14-916f-c4ed52a35377">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="midifile/midifile.vcxproj"/>
+	</Project>
 </Solution>
