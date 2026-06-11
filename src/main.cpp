@@ -9,6 +9,7 @@
 #include <string>
 #include <cstdlib>
 #include <list>
+#include <map>
 
 #if defined(_WIN32)
 #include <windows.h>
@@ -26,6 +27,86 @@
 #include <stdlib.h>
 #include <unistd.h>
 #endif
+
+void midi_processing(const std::string file){
+    smf::MidiFile midi_file;
+    if(!midi_file.read(file)){
+        std::cout << "ERROR:\tFailed to read MIDI file! Check the file path and try again." << std::endl;
+        return;
+    }
+
+    int track_count = midi_file.getTrackCount();
+    std::cout << "Number of tracks: " << track_count << std::endl;
+
+    if (track_count <=0){
+        std::cout << "ERROR:\tthere are no tracks in your midi file please select another file" << std::endl;
+        return;
+    }
+
+    for (int track = 0; track < track_count; track++){
+        int event_count = midi_file.getEventCount(track);
+        if(event_count <= 0){
+            continue;
+        }
+        for(int event = 0; event < event_count; event++){
+            smf::MidiEvent& current_event = midi_file[track][event];
+            if(current_event.isEmpty()){
+                continue;
+            }
+            if(current_event.isPatchChange()){
+                int current_instrument = current_event.getP1();
+                if(current_instrument < 0 || current_instrument >127){
+                    continue;
+                }
+                int channel = current_event.getChannelNibble();
+                if (channel < 0 || channel > 15){
+                    continue;
+                }
+                std::string instrument_name = smf::MidiFile::getGMInstrumentName(current_instrument);
+
+                std::cout << "Track: " << track << std::endl;
+                std::cout << "Channel: " << channel << std::endl;
+                std::cout << "Current Instrument" << current_instrument << std::endl;
+                
+                std::string option;
+                std::cout << "Would you like to chnage instrument (y/n)" << std::endl;
+                std::cin >> option;
+
+                if (option == "y" || option == "Y"){
+                    std:: cout << "0-127 avalable" << std::endl;
+                
+                    int new_instrument;
+                    std::cout << "Enter new instrument Number" << std::endl;
+                    std::cin >> new_instrument;
+                    if(new_instrument < 0 || new_instrument >127){
+                        std::cout << "Number out of range skiping" << std::endl;
+                        continue;
+                    }
+                    std::string new_name = smf::MidiFile::getGMInstrumentName(new_instrument);
+                    std::cout << "New Instrument name: " << new_name << std::endl;
+
+                    current_event.setP1(new_instrument);
+
+                    std::cout << "Instrument has Changed successfully" << std::endl;
+                }
+            }
+        }
+    }
+    std::cout << "Sorting tracks" << std::endl;
+    midi_file.sortTracks();
+    std::cout << "Sorting tracks complete" << std::endl;
+
+    std::cout << "saving..." << std::endl;
+    if(midi_file.write(file)){
+        std::cout << "File Saved" << std::endl;
+        
+    }
+    else{
+        std::cout << "Failed to Save file" << std:: endl;
+    }
+    return;
+}
+
 
 void view_midi_info(const std::string file){
     // reads the MIDI file and extracts information about the tracks, events, and timing
@@ -146,6 +227,7 @@ int main() {
     std::getline(std::cin, view_info);
     if (view_info == "y" || view_info == "Y"){
         view_midi_info(file);
+        midi_processing(file);
     }
 
     std::cout << "Please enter file location of sound font file" << std::endl;
