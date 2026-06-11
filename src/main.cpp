@@ -27,6 +27,112 @@
 #include <unistd.h>
 #endif
 
+void view_midi_info(const std::string file){
+    // reads the MIDI file and extracts information about the tracks, events, and timing
+    smf::MidiFile midi_file;
+    // checks to see if the file was read successfully, if not print an error message and return
+    if(!midi_file.read(file)){
+        std::cout << "Failed to read MIDI file! Check the file path and try again." << std::endl;
+        return;
+    }
+    // retrieving information of the number of tracks and ticks per quarter note in the MIDI file
+    int num_tracks = midi_file.getTrackCount();
+
+    std::cout << "Here are the number of tracks: " << num_tracks << std::endl;
+    
+    int num_tpq = midi_file.getTicksPerQuarterNote();
+    std::cout << "Here are the ticks per quarter note: " << num_tpq << std::endl;
+
+    // converting the file to absolute ticks
+    // making it easier to calculate timings
+    midi_file.makeAbsoluteTicks();
+
+    // analyzing timing
+
+    // Perform time analysis to calculate real world timing
+    // analysing the tempo events and calculates seconds for
+    // each tick
+    midi_file.doTimeAnalysis();
+
+    double sec_duration = midi_file.getFileDurationInSeconds();
+    std::cout << "Here is the duration of the MIDI file in seconds: " << sec_duration << std::endl;
+
+    double quarter_duration = midi_file.getFileDurationInQuarters();
+    std::cout << "Here is the duration of a quarter note in seconds: " <<quarter_duration << std::endl;
+
+    int tick_duration = midi_file.getFileDurationInTicks();
+    std::cout << "Here is the duration of the MIDI file in ticks: " << tick_duration << std::endl;
+
+    // iterate through events and extract data
+
+    int total_events = 0;
+    int note_on_count = 0;
+    int note_off_count = 0;
+    int instrument_change_count = 0;
+
+
+    // iterate through all the tracks in the file
+    for (int track = 0; track < midi_file.getTrackCount(); track++){
+        
+        // get the event list for the track
+        smf::MidiEventList& event_list = midi_file[track];
+
+        // get the number of events in the track
+        int event_count = event_list.getEventCount();
+        total_events += event_count;
+
+        std::cout << "Track " << track << " has " << event_count << " events." << std::endl;
+
+        // iterate through the events in the track
+        for (int i = 0; i < event_count; i++){
+            // get the individual event
+            const smf::MidiEvent& event = event_list[i];
+            // check if its a note on event
+            if (event.isNoteOn()){
+                note_on_count++;
+
+                int key_number = event.getKeyNumber();
+                int velocity = event.getVelocity();
+                int tick = event.tick;
+                double seconds = event.seconds;
+
+                // to avoid clutter only show first few
+                if (i < 3){
+                    std::cout << "Note On event: key number = " << key_number << ", velocity = " << velocity << ", tick = " << tick << ", seconds = " << seconds << std::endl;
+
+                }
+            }
+            else if (event.isNoteOff()){
+                note_off_count++;
+                int key_number = event.getKeyNumber();
+                int ticks = event.tick;
+
+                // only show first few
+                if (i < 3){
+                    std::cout << "Note Off event: key number = " << key_number << ", tick = " << ticks << std::endl;
+                }
+                
+            }
+            else if (event.isPatchChange()){
+                int instrument = event.getP1();
+                int tick = event.tick;
+
+                instrument_change_count++;
+
+                std::cout << "Instrument change event: instrument = " << instrument << ", tick = " << tick << std::endl;
+
+            }
+            
+
+        }
+
+    }
+
+    std::cout << "Total number of events: " << total_events << std::endl;
+    std::cout << "Total number of note on events: " << note_on_count << std::endl;
+    std::cout << "Total number of note off events: " << note_off_count << std::endl;
+    std::cout << "Total number of instrument change events: " << instrument_change_count << std::endl;
+}
 
 int main() {
 
@@ -34,20 +140,22 @@ int main() {
     std::string sound_font_file;
     std::cout << "Please enter file location of MIDI file" << std::endl;
     std::getline(std::cin, file);
-
-    smf::MidiFile midi_file;
-    midi_file.read(file);
-
-    int num_tracks = midi_file.getTrackCount();
-
-    std::cout << "Here are the number of tracks: " << num_tracks << std::endl;
     
+    std::cout << "Would you like to view information about the MIDI file before playing? (y/n)" << std::endl;
+    std::string view_info;
+    std::getline(std::cin, view_info);
+    if (view_info == "y" || view_info == "Y"){
+        view_midi_info(file);
+    }
+
     std::cout << "Please enter file location of sound font file" << std::endl;
     std::getline(std::cin, sound_font_file);
+
     fluid_settings_t* settings = NULL;
     fluid_synth_t* synth = NULL;
     fluid_audio_driver_t* adriver = NULL;
     fluid_player_t* player = NULL;
+
     std::list<int> sequence;
     int sfont_ID, i, key;
     int option = 4;
