@@ -21,7 +21,6 @@
 #define MEGA_DRIVE "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/sound_fonts/Mega-Drive/The_Ultimate Megadrive_Soundfont.sf2"
 #define NES "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/sound_fonts/NES/8bitsf.SF2"
 #define SNES "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/sound_fonts/SNES/SuperNintendoEntertainmentSystemV1.2.sf2"
-
 #define EXAMPLE_MIDI "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/Demo Midis/Video Game/bubble-crab-s-stage.mid"
 #else
 #include <stdlib.h>
@@ -29,6 +28,7 @@
 #endif
 
 void midi_processing(const std::string file){
+    const std::string DESTINATION = "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/Saved songs/";
     smf::MidiFile midi_file;
     if(!midi_file.read(file)){
         std::cout << "ERROR:\tFailed to read MIDI file! Check the file path and try again." << std::endl;
@@ -96,10 +96,14 @@ void midi_processing(const std::string file){
     midi_file.sortTracks();
     std::cout << "Sorting tracks complete" << std::endl;
 
+    std::string file_name;
+    std::cout << "Please enter file name:" << std::endl;
+    std:: cin >> file_name;
+    file_name = DESTINATION + file_name + ".midi";
+
     std::cout << "saving..." << std::endl;
-    if(midi_file.write(file)){
-        std::cout << "File Saved" << std::endl;
-        
+    if(midi_file.write(file_name)){
+        std::cout << "File Saved at location: " << file_name << std::endl;
     }
     else{
         std::cout << "Failed to Save file" << std:: endl;
@@ -216,11 +220,12 @@ void view_midi_info(const std::string file){
 }
 
 int main() {
-
     std::string file;
     std::string sound_font_file;
     std::cout << "Please enter file location of MIDI file" << std::endl;
     std::getline(std::cin, file);
+    std::cout << "Please enter file location of sound font file" << std::endl;
+    std::getline(std::cin, sound_font_file);
     
     std::cout << "Would you like to view information about the MIDI file before playing? (y/n)" << std::endl;
     std::string view_info;
@@ -230,8 +235,7 @@ int main() {
         midi_processing(file);
     }
 
-    std::cout << "Please enter file location of sound font file" << std::endl;
-    std::getline(std::cin, sound_font_file);
+    
 
     fluid_settings_t* settings = NULL;
     fluid_synth_t* synth = NULL;
