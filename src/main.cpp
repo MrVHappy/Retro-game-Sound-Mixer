@@ -28,63 +28,85 @@
 #endif
 
 std::string midi_processing(const std::string file){
+    // A constant value where the new file will be saved
     const std::string DESTINATION = "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/Saved songs/";
+    // reads the midi file to and checks if the file exists
     smf::MidiFile midi_file;
     if(!midi_file.read(file)){
         std::cout << "ERROR:\tFailed to read MIDI file! Check the file path and try again." << std::endl;
         return "error";
     }
-
+    // gets the number of tracks inside of the midi file
     int track_count = midi_file.getTrackCount();
     std::cout << "Number of tracks: " << track_count << std::endl;
 
+    // checks if there is information in the midi file
     if (track_count <=0){
         std::cout << "ERROR:\tthere are no tracks in your midi file please select another file" << std::endl;
         return "error";
     }
 
+    // for loop goes through every track and event in the song
     for (int track = 0; track < track_count; track++){
+        // gets the number of events in the ith track
         int event_count = midi_file.getEventCount(track);
+        // if there are no events in the track then skip 
         if(event_count <= 0){
             continue;
         }
+        // else go through each event
         for(int event = 0; event < event_count; event++){
+            // analyse the current event
             smf::MidiEvent& current_event = midi_file[track][event];
+            // skip if the event is empty
             if(current_event.isEmpty()){
                 continue;
             }
+            // check if there is a change of instrument
             if(current_event.isPatchChange()){
+                // get the new instrument
                 int current_instrument = current_event.getP1();
+                // skip invalid instrument
                 if(current_instrument < 0 || current_instrument >127){
                     continue;
                 }
+                // get the channel of the instrument
                 int channel = current_event.getChannelNibble();
+                // skip if the channel is not valid
                 if (channel < 0 || channel > 15){
                     continue;
                 }
+                // get the instrument name
                 std::string instrument_name = smf::MidiFile::getGMInstrumentName(current_instrument);
-
+                
+                // display the track and event information
                 std::cout << "Track: " << track << std::endl;
                 std::cout << "Channel: " << channel << std::endl;
-                std::cout << "Current Instrument" << current_instrument << std::endl;
+                std::cout << "Current Instrument: " << current_instrument << std::endl;
+                std::cout << "Current Instrument Name: " << instrument_name << std::endl;
                 
+                // promt user if they would like to change the instrument
                 std::string option;
                 std::cout << "Would you like to chnage instrument (y/n)" << std::endl;
                 std::cin >> option;
 
+                // if yes then allow the user to select a new instrument
                 if (option == "y" || option == "Y"){
                     std:: cout << "0-127 avalable" << std::endl;
                 
                     int new_instrument;
                     std::cout << "Enter new instrument Number" << std::endl;
                     std::cin >> new_instrument;
+                    // check to see if the instrument number is valid
                     if(new_instrument < 0 || new_instrument >127){
                         std::cout << "Number out of range skiping" << std::endl;
                         continue;
                     }
+                    // display the name of the new instrument
                     std::string new_name = smf::MidiFile::getGMInstrumentName(new_instrument);
                     std::cout << "New Instrument name: " << new_name << std::endl;
-
+                    
+                    // change the instrument
                     current_event.setP1(new_instrument);
 
                     std::cout << "Instrument has Changed successfully" << std::endl;
@@ -92,15 +114,18 @@ std::string midi_processing(const std::string file){
             }
         }
     }
+    // sorting tracks
     std::cout << "Sorting tracks" << std::endl;
     midi_file.sortTracks();
     std::cout << "Sorting tracks complete" << std::endl;
 
+    // ask user to type in the new song name
     std::string file_name;
     std::cout << "Please enter file name:" << std::endl;
     std:: cin >> file_name;
+    // assigns it to a path
     file_name = DESTINATION + file_name + ".midi";
-
+    // saves the foile
     std::cout << "saving..." << std::endl;
     if(midi_file.write(file_name)){
         std::cout << "File Saved at location: " << file_name << std::endl;
@@ -112,6 +137,7 @@ std::string midi_processing(const std::string file){
 }
 
 void display_instruments(){
+    // array of all the types of instruments
     const std::string instrument_category[16] = {"Pianos", "Chromatic Percussion", "Organ", "Guitar", "Bass", "Strings", "Wind", "Flute", "Synth Lead", "Synth Pad", "Synth Effects", "Ethnic", "Percussive", "Drum & Percussion", "Sound Effects", "Miscellaneous"};
     int category_index = 0;
     
@@ -119,20 +145,26 @@ void display_instruments(){
     std::string prev_instrument;
     int start = 0;
     int end;
+    // loop through all the instruments
     for (int i = 0; i < 128; i++){
+        // displays the next instrument category
         if (i % 8 == 0){
             std::cout << instrument_category[category_index] << std::endl;
             category_index++;
         }
+        // gets the instrument index and name
         end = i;
         current_instrument = smf::MidiFile::getGMInstrumentName(i);
+        // skip first
         if(i == 0){
             continue;
         }
+        // output last
         if (i == 127){
             std::cout << "\t" << current_instrument << " "<< end << std::endl; 
             break;
         }
+        // check if the last instrument is the same as the current
         prev_instrument = smf::MidiFile::getGMInstrumentName(i -1);
         if(current_instrument != prev_instrument){
             std::cout << "\t" << current_instrument << " " << end << std::endl;
@@ -250,25 +282,32 @@ void view_midi_info(const std::string file){
 }
 
 int main() {
+    // displays the instruments
     display_instruments();
     std::string file;
     std::string sound_font_file;
+    // promts user to enter file location of midi and sound font file
     std::cout << "Please enter file location of MIDI file" << std::endl;
     std::getline(std::cin, file);
     std::cout << "Please enter file location of sound font file" << std::endl;
-    std::getline(std::cin, sound_font_file);
+    std::getline(std::cin,sound_font_file);
     
+    // asks user if they would like to see midi file information
     std::cout << "Would you like to view information about the MIDI file before playing? (y/n)" << std::endl;
     std::string view_info;
     std::getline(std::cin, view_info);
     if (view_info == "y" || view_info == "Y"){
+        // display file information if typed yes
         view_midi_info(file);
-        file = midi_processing(file);
-        std::cout << file << std::endl;
+        
     }
 
+    // modifies the midi file
+    file = midi_processing(file);
+    // displays new file location
+    std::cout << file << std::endl;
     
-
+    // setting up midi player
     fluid_settings_t* settings = NULL;
     fluid_synth_t* synth = NULL;
     fluid_audio_driver_t* adriver = NULL;
@@ -282,7 +321,7 @@ int main() {
             
     // Create settings
     settings = new_fluid_settings();
-
+    // checks to see if the settings has been created successfully
     if (settings == NULL) {
         puts("settings creation failed");
         goto err;
@@ -290,7 +329,7 @@ int main() {
 
     // Create synth
     synth = new_fluid_synth(settings);
-
+    // checks to see if the synth has been created successfully
     if (synth == NULL) {
         puts("synth creation failed");
         goto err;
@@ -300,7 +339,7 @@ int main() {
     std::cout << "Loading SF2..." << std::endl;
 
     sfont_ID = fluid_synth_sfload(synth,sound_font_file.c_str(), 1);
-
+    // checks to see if the sound font has been created successfully
     if (sfont_ID == FLUID_FAILED) {
         puts("Loading SoundFont failed! Check the file path and try again.");
         goto err;
@@ -308,7 +347,7 @@ int main() {
 
     // Create audio driver
     adriver = new_fluid_audio_driver(settings, synth);
-
+    // checks to see if the audio driver has been created successfully
     if (adriver == NULL) {
         puts("Failed to create audio driver");
         goto err;
@@ -331,6 +370,7 @@ int main() {
         goto err;
     }
     fluid_player_join(player);
+// clean up
 err:
     if (player != NULL) {
         delete_fluid_player(player);
