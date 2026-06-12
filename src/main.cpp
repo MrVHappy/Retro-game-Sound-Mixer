@@ -32,7 +32,7 @@ std::string midi_processing(const std::string file){
     smf::MidiFile midi_file;
     if(!midi_file.read(file)){
         std::cout << "ERROR:\tFailed to read MIDI file! Check the file path and try again." << std::endl;
-        return;
+        return "error";
     }
 
     int track_count = midi_file.getTrackCount();
@@ -40,7 +40,7 @@ std::string midi_processing(const std::string file){
 
     if (track_count <=0){
         std::cout << "ERROR:\tthere are no tracks in your midi file please select another file" << std::endl;
-        return;
+        return "error";
     }
 
     for (int track = 0; track < track_count; track++){
@@ -112,23 +112,30 @@ std::string midi_processing(const std::string file){
 }
 
 void display_instruments(){
+    const std::string instrument_category[16] = {"Pianos", "Chromatic Percussion", "Organ", "Guitar", "Bass", "Strings", "Wind", "Flute", "Synth Lead", "Synth Pad", "Synth Effects", "Ethnic", "Percussive", "Drum & Percussion", "Sound Effects", "Miscellaneous"};
+    int category_index = 0;
+    
     std::string current_instrument;
     std::string prev_instrument;
     int start = 0;
     int end;
     for (int i = 0; i < 128; i++){
+        if (i % 8 == 0){
+            std::cout << instrument_category[category_index] << std::endl;
+            category_index++;
+        }
         end = i;
         current_instrument = smf::MidiFile::getGMInstrumentName(i);
         if(i == 0){
             continue;
         }
         if (i == 127){
-            std::cout << current_instrument << " "<< start << "-" << end << std::endl; 
+            std::cout << "\t" << current_instrument << " "<< end << std::endl; 
             break;
         }
         prev_instrument = smf::MidiFile::getGMInstrumentName(i -1);
         if(current_instrument != prev_instrument){
-            std::cout << current_instrument << " "<< start << "-" << end << std::endl;
+            std::cout << "\t" << current_instrument << " " << end << std::endl;
             start = i;
         }
     }
