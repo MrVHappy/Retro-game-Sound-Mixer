@@ -27,7 +27,7 @@
 #include <unistd.h>
 #endif
 
-void midi_processing(const std::string file){
+std::string midi_processing(const std::string file){
     const std::string DESTINATION = "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/Saved songs/";
     smf::MidiFile midi_file;
     if(!midi_file.read(file)){
@@ -108,7 +108,30 @@ void midi_processing(const std::string file){
     else{
         std::cout << "Failed to Save file" << std:: endl;
     }
-    return;
+    return file_name;
+}
+
+void display_instruments(){
+    std::string current_instrument;
+    std::string prev_instrument;
+    int start = 0;
+    int end;
+    for (int i = 0; i < 128; i++){
+        end = i;
+        current_instrument = smf::MidiFile::getGMInstrumentName(i);
+        if(i == 0){
+            continue;
+        }
+        if (i == 127){
+            std::cout << current_instrument << " "<< start << "-" << end << std::endl; 
+            break;
+        }
+        prev_instrument = smf::MidiFile::getGMInstrumentName(i -1);
+        if(current_instrument != prev_instrument){
+            std::cout << current_instrument << " "<< start << "-" << end << std::endl;
+            start = i;
+        }
+    }
 }
 
 
@@ -220,6 +243,7 @@ void view_midi_info(const std::string file){
 }
 
 int main() {
+    display_instruments();
     std::string file;
     std::string sound_font_file;
     std::cout << "Please enter file location of MIDI file" << std::endl;
@@ -232,7 +256,8 @@ int main() {
     std::getline(std::cin, view_info);
     if (view_info == "y" || view_info == "Y"){
         view_midi_info(file);
-        midi_processing(file);
+        file = midi_processing(file);
+        std::cout << file << std::endl;
     }
 
     
@@ -293,7 +318,7 @@ int main() {
         puts("Failed to add MIDI file to player! Check the file path and try again.");
         goto err;
     }
-
+ 
     if (fluid_player_play(player) != FLUID_OK) {
         puts("Failed to play MIDI file");
         goto err;
