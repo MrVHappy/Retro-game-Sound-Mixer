@@ -124,7 +124,7 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Sebastian/OneDrive/Documents/GitHub/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/midifile/Debug/midireg.exe -installedDir C:/Users/Sebastian/OneDrive/Documents/GitHub/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/midifile/Debug/midireg.exe -installedDir C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/bin -OutVariable out
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -191,7 +191,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Sebastian/OneDrive/Documents/GitHub/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/midifile/Release/midireg.exe -installedDir C:/Users/Sebastian/OneDrive/Documents/GitHub/vcpkg/installed/x64-windows/bin -OutVariable out
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/midifile/Release/midireg.exe -installedDir C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/bin -OutVariable out
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -258,7 +258,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Sebastian/OneDrive/Documents/GitHub/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/midifile/MinSizeRel/midireg.exe -installedDir C:/Users/Sebastian/OneDrive/Documents/GitHub/vcpkg/installed/x64-windows/bin -OutVariable out
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/midifile/MinSizeRel/midireg.exe -installedDir C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/bin -OutVariable out
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -324,7 +324,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Sebastian/OneDrive/Documents/GitHub/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/midifile/RelWithDebInfo/midireg.exe -installedDir C:/Users/Sebastian/OneDrive/Documents/GitHub/vcpkg/installed/x64-windows/bin -OutVariable out
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/midifile/RelWithDebInfo/midireg.exe -installedDir C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/bin -OutVariable out
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

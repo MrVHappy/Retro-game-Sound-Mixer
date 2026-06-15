@@ -14,7 +14,8 @@
 #if defined(_WIN32)
 #include <windows.h>
 #define sleep(_t) Sleep(_t * 1000)
-
+#include <cstdint> 
+#include <sstream>
 #include <process.h>
 #define getpid _getpid
 
@@ -22,14 +23,131 @@
 #define NES "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/sound_fonts/NES/8bitsf.SF2"
 #define SNES "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/sound_fonts/SNES/SuperNintendoEntertainmentSystemV1.2.sf2"
 #define EXAMPLE_MIDI "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/Demo Midis/Video Game/bubble-crab-s-stage.mid"
+#define TEMP "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/temp songs/temp"
 #else
 #include <stdlib.h>
 #include <unistd.h>
 #endif
-void adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event ){
+#include <vector>
+
+int adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event ){
+    std::string choice;
+    std::cout << "IN THE ADJUSTING STAGE" << std::endl;
+    // create a temporary midi file
     smf::MidiFile midi_track = smf::MidiFile();
+    typedef unsigned char uchar;
+    // contains the data of the instrument
+    std::vector<uchar> instrument_data;
+    instrument_data.resize(2);
+    // Program change command
+    instrument_data[0] = 0xC0;
+    // instrument type
+    instrument_data[1] = instrument;
+    // setting up the ticks per quarter note
+    midi_track.setTicksPerQuarterNote(480);
+    
+    // allpcating events to the track
+    midi_track.allocateEvents(0,2);
+    midi_track.addEvent(0,0,instrument_data);
+    midi_track.addEvent(0,event);
+    
+    // midi track will be saved in RAM
+    midi_track.write(TEMP);
+    // std::ostringstream memory_buffer;
+    // midi_track.write(memory_buffer);
+    // std::string memory_location = memory_buffer.str();
+
+    // setting up midi player
+    fluid_settings_t* settings = NULL;
+    fluid_synth_t* synth = NULL;
+    fluid_audio_driver_t* adriver = NULL;
+    fluid_player_t* player = NULL;
+
+    std::list<int> sequence;
+    int sfont_ID, i, key;
+    int option = 4;
+    std::string input;
+    const char* FONT_TYPE = nullptr;
+            
+    // Create settings
+    settings = new_fluid_settings();
+    // checks to see if the settings has been created successfully
+    if (settings == NULL) {
+        puts("settings creation failed");
+        return -1;
+    }
+
+    // Create synth
+    synth = new_fluid_synth(settings);
+    // checks to see if the synth has been created successfully
+    if (synth == NULL) {
+        puts("synth creation failed");
+        return -1;
+    }
+
+    // Load SoundFont
+    std::cout << "Loading SF2..." << std::endl;
+
+    sfont_ID = fluid_synth_sfload(synth,sf_file.c_str(), 1);
+    // checks to see if the sound font has been created successfully
+    if (sfont_ID == FLUID_FAILED) {
+        puts("Loading SoundFont failed! Check the file path and try again.");
+        return -1;
+    }
+
+    // Create audio driver
+    adriver = new_fluid_audio_driver(settings, synth);
+    // checks to see if the audio driver has been created successfully
+    if (adriver == NULL) {
+        puts("Failed to create audio driver");
+        return -1;
+    }
+
+    // create the player
+    player = new_fluid_player(synth);
+    if (player == NULL){
+        puts("Failed to create player");
+        return -1;
+    }
+
+    if (fluid_player_add(player, TEMP) != FLUID_OK) {
+        puts("Failed to add MIDI file to player! Check the file path and try again.");
+        return -1;
+    }
+ 
+    if (fluid_player_play(player) != FLUID_OK) {
+        puts("Failed to play MIDI file");
+        return -1;
+    }
+    fluid_player_join(player);
+    
+    std::cout << "Do you like the change made? y/n" << std::endl;
+    std::getline(std::cin,choice);
+    if (choice =="y" || choice == "Y"){
+        return instrument;
+    }
+    else{
+        return -1;
+    }
+    // clean up
+    err:
+        std::cout << "CLEANING UP" <<std::endl;
+        if (player != NULL) {
+            delete_fluid_player(player);
+        }
+        if (adriver != NULL) {
+            delete_fluid_audio_driver(adriver);
+        }
+        if (synth != NULL) {
+            delete_fluid_synth(synth);
+        }
+        if (settings != NULL) {
+            delete_fluid_settings(settings);
+        }
+        return -1;
+
 }
-std::string midi_processing(const std::string file){
+std::string midi_processing(const std::string file, std::string sf_file){
     // A constant value where the new file will be saved
     const std::string DESTINATION = "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/Saved songs/";
     // reads the midi file to and checks if the file exists
@@ -68,6 +186,8 @@ std::string midi_processing(const std::string file){
             if(current_event.isPatchChange()){
                 // get the new instrument
                 int current_instrument = current_event.getP1();
+                // getting the number of ticks for the current event
+                int ticks = current_event.getTickDuration();
                 // skip invalid instrument
                 if(current_instrument < 0 || current_instrument >127){
                     continue;
@@ -94,24 +214,30 @@ std::string midi_processing(const std::string file){
 
                 // if yes then allow the user to select a new instrument
                 if (option == "y" || option == "Y"){
-                    std:: cout << "0-127 avalable" << std::endl;
-                
                     int new_instrument;
-                    std::cout << "Enter new instrument Number" << std::endl;
-                    std::cin >> new_instrument;
-                    // check to see if the instrument number is valid
-                    if(new_instrument < 0 || new_instrument >127){
-                        std::cout << "Number out of range skiping" << std::endl;
-                        continue;
-                    }
-                    // display the name of the new instrument
-                    std::string new_name = smf::MidiFile::getGMInstrumentName(new_instrument);
-                    std::cout << "New Instrument name: " << new_name << std::endl;
-                    
-                    // change the instrument
-                    current_event.setP1(new_instrument);
+                    std::cout << "Command Byte of Current event: "<<current_event.getCommandByte() << std::endl;
+                        std:: cout << "0-127 avalable" << std::endl;
+                
+                        
+                        std::cout << "Enter new instrument Number" << std::endl;
+                        std::cin >> new_instrument;
+                        // check to see if the instrument number is valid
+                        if(new_instrument < 0 || new_instrument >127){
+                            std::cout << "Number out of range skiping" << std::endl;
+                            continue;
+                        }
+                        std::cout << "User has entered: " << new_instrument << std::endl;
+                        // display the name of the new instrument
+                        std::string new_name = smf::MidiFile::getGMInstrumentName(new_instrument);
+                        std::cout << "New Instrument name: " << new_name << std::endl;
+                        
+                        // change the instrument
+                        current_event.setP1(new_instrument);
 
-                    std::cout << "Instrument has Changed successfully" << std::endl;
+                        std::cout << "Instrument has Changed successfully" << std::endl;
+
+                        std::cout << "Calling adjust_instrument" << std::endl;
+                        adjust_instrument(sf_file,new_instrument,current_event);
                 }
             }
         }
@@ -305,7 +431,7 @@ int main() {
     }
 
     // modifies the midi file
-    file = midi_processing(file);
+    file = midi_processing(file,sound_font_file);
     // displays new file location
     std::cout << file << std::endl;
     
