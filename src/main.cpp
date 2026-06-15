@@ -26,7 +26,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 #endif
-
+void adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event ){
+    smf::MidiFile midi_track = smf::MidiFile();
+}
 std::string midi_processing(const std::string file){
     // A constant value where the new file will be saved
     const std::string DESTINATION = "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/Saved songs/";
