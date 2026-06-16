@@ -78,7 +78,6 @@
 	</Project>
 	<Project Path="RetroSoundMixer.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="53757ee8-c111-3159-9069-5d9472613ed2">
 		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
-		<BuildDependency Project="midifile/midifile.vcxproj"/>
 	</Project>
 	<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="75b58daf-a40d-36cc-920a-de011f82f06b"/>
 	<Project Path="midifile/asciimidi.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="3cd32991-51c4-3766-afbf-28192f744caf">

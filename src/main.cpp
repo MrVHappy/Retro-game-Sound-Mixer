@@ -34,7 +34,20 @@
 #include <vector>
 
 
-
+void clean_up(fluid_settings_t* settings,fluid_synth_t* synth,fluid_audio_driver_t* adriver,fluid_player_t* player){
+    if (player != NULL) {
+        delete_fluid_player(player);
+    }
+    if (adriver != NULL) {
+        delete_fluid_audio_driver(adriver);
+    }
+    if (synth != NULL) {
+        delete_fluid_synth(synth);
+    }
+    if (settings != NULL) {
+        delete_fluid_settings(settings);
+    }
+}
 int adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event, int event_index, int track, smf::MidiFile midi_file){
     std::string choice;
     std::cout << "IN THE ADJUSTING STAGE" << std::endl;
@@ -86,6 +99,7 @@ int adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event,
     // checks to see if the settings has been created successfully
     if (settings == NULL) {
         puts("settings creation failed");
+        clean_up(settings,synth,adriver,player);
         return -1;
     }
 
@@ -94,7 +108,9 @@ int adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event,
     // checks to see if the synth has been created successfully
     if (synth == NULL) {
         puts("synth creation failed");
+        clean_up(settings,synth,adriver,player);
         return -1;
+        
     }
 
     // Load SoundFont
@@ -104,6 +120,7 @@ int adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event,
     // checks to see if the sound font has been created successfully
     if (sfont_ID == FLUID_FAILED) {
         puts("Loading SoundFont failed! Check the file path and try again.");
+        clean_up(settings,synth,adriver,player);
         return -1;
     }
 
@@ -112,6 +129,7 @@ int adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event,
     // checks to see if the audio driver has been created successfully
     if (adriver == NULL) {
         puts("Failed to create audio driver");
+        clean_up(settings,synth,adriver,player);
         return -1;
     }
 
@@ -119,16 +137,19 @@ int adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event,
     player = new_fluid_player(synth);
     if (player == NULL){
         puts("Failed to create player");
+        clean_up(settings,synth,adriver,player);
         return -1;
     }
 
     if (fluid_player_add(player, TEMP) != FLUID_OK) {
         puts("Failed to add MIDI file to player! Check the file path and try again.");
+        clean_up(settings,synth,adriver,player);
         return -1;
     }
  
     if (fluid_player_play(player) != FLUID_OK) {
         puts("Failed to play MIDI file");
+        clean_up(settings,synth,adriver,player);
         return -1;
     }
     fluid_player_join(player);
@@ -136,27 +157,13 @@ int adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event,
     std::cout << "Do you like the change made? y/n" << std::endl;
     std::getline(std::cin,choice);
     if (choice =="y" || choice == "Y"){
+        clean_up(settings,synth,adriver,player);
         return instrument;
     }
     else{
+        clean_up(settings,synth,adriver,player);
         return -1;
     }
-    // clean up
-    err:
-        std::cout << "CLEANING UP" <<std::endl;
-        if (player != NULL) {
-            delete_fluid_player(player);
-        }
-        if (adriver != NULL) {
-            delete_fluid_audio_driver(adriver);
-        }
-        if (synth != NULL) {
-            delete_fluid_synth(synth);
-        }
-        if (settings != NULL) {
-            delete_fluid_settings(settings);
-        }
-        return -1;
 
 }
 std::string midi_processing(const std::string file, std::string sf_file){

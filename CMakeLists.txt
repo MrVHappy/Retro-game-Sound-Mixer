@@ -21,6 +21,7 @@ target_include_directories(RetroSoundMixer PRIVATE
 )
 
 target_link_libraries(RetroSoundMixer PRIVATE
-    midifile
+    debug ${CMAKE_BINARY_DIR}/midifile/Debug/midifile.lib
+    optimized ${CMAKE_BINARY_DIR}/midifile/Release/midifile.lib
     FluidSynth::libfluidsynth
 )
