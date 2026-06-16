@@ -10,8 +10,11 @@
 #include <cstdlib>
 #include <list>
 #include <map>
+#include <algorithm>
+
 
 #if defined(_WIN32)
+#define NOMINMAX 
 #include <windows.h>
 #define sleep(_t) Sleep(_t * 1000)
 #include <cstdint> 
@@ -30,7 +33,9 @@
 #endif
 #include <vector>
 
-int adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event ){
+
+
+int adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event, int event_index, int track, smf::MidiFile midi_file){
     std::string choice;
     std::cout << "IN THE ADJUSTING STAGE" << std::endl;
     // create a temporary midi file
@@ -47,9 +52,16 @@ int adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event 
     midi_track.setTicksPerQuarterNote(480);
     
     // allpcating events to the track
-    midi_track.allocateEvents(0,2);
+    // midi_track.allocateEvents(0,2);
     midi_track.addEvent(0,0,instrument_data);
     midi_track.addEvent(0,event);
+    // Add a window of events around the patch change (e.g. next 200 events)
+    std::cout<< "Processing" << std::endl;
+    int end_event = std::min(event_index + 200, (int)midi_file.getEventCount(track));
+    for (int i = event_index; i <  end_event; i++) {
+        midi_track.addEvent(0, midi_file[track][i]);
+                               
+    }
     
     // midi track will be saved in RAM
     midi_track.write(TEMP);
@@ -211,16 +223,15 @@ std::string midi_processing(const std::string file, std::string sf_file){
                 std::string option;
                 std::cout << "Would you like to chnage instrument (y/n)" << std::endl;
                 std::cin >> option;
-
+                std::cin.ignore();
                 // if yes then allow the user to select a new instrument
                 if (option == "y" || option == "Y"){
                     int new_instrument;
                     std::cout << "Command Byte of Current event: "<<current_event.getCommandByte() << std::endl;
                         std:: cout << "0-127 avalable" << std::endl;
-                
-                        
                         std::cout << "Enter new instrument Number" << std::endl;
                         std::cin >> new_instrument;
+                        std::cin.ignore();
                         // check to see if the instrument number is valid
                         if(new_instrument < 0 || new_instrument >127){
                             std::cout << "Number out of range skiping" << std::endl;
@@ -237,7 +248,7 @@ std::string midi_processing(const std::string file, std::string sf_file){
                         std::cout << "Instrument has Changed successfully" << std::endl;
 
                         std::cout << "Calling adjust_instrument" << std::endl;
-                        adjust_instrument(sf_file,new_instrument,current_event);
+                        adjust_instrument(sf_file,new_instrument,current_event, event,track,midi_file);
                 }
             }
         }

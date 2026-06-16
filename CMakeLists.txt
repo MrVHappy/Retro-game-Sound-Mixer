@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.20)
 
+# Must be before project()
+set(CMAKE_TOOLCHAIN_FILE "${CMAKE_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake")
+set(FluidSynth_DIR "${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows/share/fluidsynth")
+
 project(RetroSoundMixer)
 
 set(CMAKE_CXX_STANDARD 17)

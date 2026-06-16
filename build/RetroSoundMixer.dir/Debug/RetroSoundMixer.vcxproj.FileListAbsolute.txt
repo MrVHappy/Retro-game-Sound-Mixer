@@ -1,0 +1,2 @@
+C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\build\Debug\libfluidsynth-3.dll
+C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\build\RetroSoundMixer.dir\Debug\RetroSou.2C978BEB.Up2Date

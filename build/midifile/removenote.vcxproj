@@ -24,7 +24,6 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F97DB170-31CE-30CB-A7A8-35D642FEF410}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <VcpkgEnabled>false</VcpkgEnabled>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>removenote</ProjectName>
@@ -55,7 +54,7 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -121,18 +120,6 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message></Message>
-      <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/midifile/Debug/removenote.exe -installedDir C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/bin -OutVariable out
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>Debug\midifile.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -188,18 +175,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message></Message>
-      <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/midifile/Release/removenote.exe -installedDir C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/bin -OutVariable out
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>Release\midifile.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -255,18 +230,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message></Message>
-      <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/midifile/MinSizeRel/removenote.exe -installedDir C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/bin -OutVariable out
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>MinSizeRel\midifile.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -321,18 +284,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message></Message>
-      <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/midifile/RelWithDebInfo/removenote.exe -installedDir C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/bin -OutVariable out
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>RelWithDebInfo\midifile.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
