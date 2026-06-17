@@ -70,7 +70,7 @@ int adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event,
     midi_track.addEvent(0,event);
     // Add a window of events around the patch change (e.g. next 200 events)
     std::cout<< "Processing" << std::endl;
-    int end_event = std::min(event_index + 200, (int)midi_file.getEventCount(track));
+    int end_event = std::min(event_index + 200, (int)midi_file.getEventCount(track)) ;
     for (int i = event_index; i <  end_event; i++) {
         midi_track.addEvent(0, midi_file[track][i]);
                                
@@ -228,13 +228,14 @@ std::string midi_processing(const std::string file, std::string sf_file){
                 
                 // promt user if they would like to change the instrument
                 std::string option;
-                std::cout << "Would you like to chnage instrument (y/n)" << std::endl;
+                std::cout << "Would you like to change instrument (y/n)" << std::endl;
                 std::cin >> option;
                 std::cin.ignore();
                 // if yes then allow the user to select a new instrument
                 if (option == "y" || option == "Y"){
-                    int new_instrument;
+                    int new_instrument = adjust_instrument(sf_file,current_instrument,current_event, event,track,midi_file);
                     std::cout << "Command Byte of Current event: "<<current_event.getCommandByte() << std::endl;
+                    while(new_instrument == -1){
                         std:: cout << "0-127 avalable" << std::endl;
                         std::cout << "Enter new instrument Number" << std::endl;
                         std::cin >> new_instrument;
@@ -255,7 +256,9 @@ std::string midi_processing(const std::string file, std::string sf_file){
                         std::cout << "Instrument has Changed successfully" << std::endl;
 
                         std::cout << "Calling adjust_instrument" << std::endl;
-                        adjust_instrument(sf_file,new_instrument,current_event, event,track,midi_file);
+                        new_instrument = adjust_instrument(sf_file,new_instrument,current_event, event,track,midi_file);
+                    }
+                        
                 }
             }
         }
