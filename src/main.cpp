@@ -1,7 +1,7 @@
 // references: 
 // https://www.fluidsynth.org/wiki/api/examples/example/
 // https://www.fluidsynth.org/api/MIDIPlayer.html
-// 
+// https://www.fluidsynth.org/wiki/usage/file-renderer/
 
 #include <fluidsynth.h>
 #include <MidiFile.h>
@@ -27,6 +27,7 @@
 #define SNES "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/sound_fonts/SNES/SuperNintendoEntertainmentSystemV1.2.sf2"
 #define EXAMPLE_MIDI "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/Demo Midis/Video Game/bubble-crab-s-stage.mid"
 #define TEMP "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/temp songs/temp.midi"
+#define WAV "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/WAV songs/TEMP.wav"
 #else
 #include <stdlib.h>
 #include <unistd.h>
@@ -461,6 +462,7 @@ int main() {
     fluid_synth_t* synth = NULL;
     fluid_audio_driver_t* adriver = NULL;
     fluid_player_t* player = NULL;
+    fluid_file_renderer_t* renderer = NULL;
 
     std::list<int> sequence;
     int sfont_ID, i, key;
@@ -475,7 +477,13 @@ int main() {
         puts("settings creation failed");
         goto err;
     }
+    // identify where the file location of the sound file
+    fluid_settings_setstr(settings,"audio.file.name",WAV);
 
+    // use the number of samples processed as timing source rather than sys timer
+    fluid_settings_setstr(settings, "player.timing-source", "sample");
+    // no need to pin sample data due to being a non-realtime scenario
+    fluid_settings_setint(settings,"synth.lock-memory",0);
     // Create synth
     synth = new_fluid_synth(settings);
     // checks to see if the synth has been created successfully
@@ -494,13 +502,13 @@ int main() {
         goto err;
     }
 
-    // Create audio driver
-    adriver = new_fluid_audio_driver(settings, synth);
-    // checks to see if the audio driver has been created successfully
-    if (adriver == NULL) {
-        puts("Failed to create audio driver");
-        goto err;
-    }
+    // // Create audio driver
+    // adriver = new_fluid_audio_driver(settings, synth);
+    // // checks to see if the audio driver has been created successfully
+    // if (adriver == NULL) {
+    //     puts("Failed to create audio driver");
+    //     goto err;
+    // }
 
     // create the player
     player = new_fluid_player(synth);
@@ -518,9 +526,26 @@ int main() {
         puts("Failed to play MIDI file");
         goto err;
     }
+
+    renderer = new_fluid_file_renderer(synth);
+    if(renderer == NULL){
+        puts("Failed to create renderer");
+        goto err;
+    }
+
+    std::cout << "Player status: " << fluid_player_get_status(player) << std::endl;
+    while(fluid_player_get_status(player) == FLUID_PLAYER_PLAYING){
+        if(fluid_file_renderer_process_block(renderer) != FLUID_OK){
+            break;
+        }
+    }
+    fluid_player_stop(player);
     fluid_player_join(player);
 // clean up
 err:
+    if(renderer != NULL){
+        delete_fluid_file_renderer(renderer);
+    }
     if (player != NULL) {
         delete_fluid_player(player);
     }
