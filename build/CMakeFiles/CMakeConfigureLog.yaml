@@ -66,6 +66,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
@@ -101,7 +102,7 @@ events:
       The output was:
       0
       MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-      Build started 17/06/2026 15:29:17.
+      Build started 18/06/2026 10:05:51.
       
       Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\4.3.3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -136,7 +137,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.68
+      Time Elapsed 00:00:00.73
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -191,6 +192,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Python/bin/"
@@ -223,6 +225,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Python/bin/"
@@ -255,6 +258,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/AppData/Local/Python/bin/"
@@ -334,6 +338,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/link"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/link.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/link.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/link"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/link"
@@ -430,6 +437,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/link"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/link.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/link.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/link"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/link"
@@ -497,6 +507,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
@@ -552,6 +563,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Python/bin/"
@@ -584,6 +596,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Python/bin/"
@@ -616,6 +629,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/AppData/Local/Python/bin/"
@@ -695,6 +709,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lld-link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lld-link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lld-link"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link"
@@ -791,6 +808,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/lld-link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/lld-link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/lld-link"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link"
@@ -887,6 +907,9 @@ events:
       - "C:/Program Files/CMake/bin/lld-link.com"
       - "C:/Program Files/CMake/bin/lld-link.exe"
       - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link.com"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link.exe"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link"
       - "C:/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link.com"
       - "C:/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
       - "C:/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link"
@@ -953,6 +976,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
@@ -1006,6 +1030,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Python/bin/"
@@ -1038,6 +1063,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Python/bin/"
@@ -1070,6 +1096,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/AppData/Local/Python/bin/"
@@ -1149,6 +1176,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/link"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/link.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/link.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/link"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/link"
@@ -1245,6 +1275,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/link"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/link.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/link.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/link"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/link"
@@ -1312,6 +1345,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
@@ -1365,6 +1399,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Python/bin/"
@@ -1397,6 +1432,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Python/bin/"
@@ -1429,6 +1465,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/AppData/Local/Python/bin/"
@@ -1508,6 +1545,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/mt.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/mt.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/mt"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/mt.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/mt.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/mt"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/mt.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/mt.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/mt"
@@ -1604,6 +1644,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/mt.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/mt.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/mt"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/mt.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/mt.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/mt"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/mt.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/mt.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/mt"
@@ -1689,6 +1732,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
@@ -1742,6 +1786,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Python/bin/"
@@ -1774,6 +1819,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Python/bin/"
@@ -1806,6 +1852,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/AppData/Local/Python/bin/"
@@ -1885,6 +1932,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lib.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lib.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lib"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lib.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lib.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lib"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lib.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lib.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lib"
@@ -1981,6 +2031,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/lib.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/lib.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/lib"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lib.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lib.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lib"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lib.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lib.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lib"
@@ -2048,6 +2101,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
@@ -2116,6 +2170,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
@@ -2151,7 +2206,7 @@ events:
       The output was:
       0
       MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-      Build started 17/06/2026 15:29:18.
+      Build started 18/06/2026 10:05:52.
       
       Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -2186,7 +2241,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.75
+      Time Elapsed 00:00:00.62
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -2241,6 +2296,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Python/bin/"
@@ -2273,6 +2329,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Python/bin/"
@@ -2305,6 +2362,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/AppData/Local/Python/bin/"
@@ -2384,6 +2442,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lld-link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lld-link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lld-link"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link"
@@ -2480,6 +2541,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/lld-link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/lld-link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/lld-link"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link"
@@ -2576,6 +2640,9 @@ events:
       - "C:/Program Files/CMake/bin/lld-link.com"
       - "C:/Program Files/CMake/bin/lld-link.exe"
       - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link.com"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link.exe"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/lld-link"
       - "C:/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link.com"
       - "C:/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
       - "C:/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/lld-link"
@@ -2642,6 +2709,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
@@ -2708,6 +2776,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Python/bin/"
@@ -2762,6 +2831,7 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Python/bin/"
@@ -2816,6 +2886,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
       - "C:/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sebastian/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Sebastian/AppData/Local/Python/bin/"
@@ -2937,6 +3008,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/rc.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/rc.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/rc"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/rc.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/rc.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/rc"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/rc.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/rc.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/rc"
@@ -3099,6 +3173,9 @@ events:
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/rc.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/rc.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Program Files/CMake/bin/rc"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/rc.com"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/rc.exe"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/rc"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/rc.com"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/rc.exe"
       - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/Users/Sebastian/AppData/Local/Microsoft/WindowsApps/rc"
@@ -3250,6 +3327,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
@@ -3275,8 +3353,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-9tx8qa"
-      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-9tx8qa"
+      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-rbqr9i"
+      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-rbqr9i"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -3290,39 +3368,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-9tx8qa'
+        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-rbqr9i'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2fc53.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6afe7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 17/06/2026 15:29:19.
+        Build started 18/06/2026 10:05:53.
         
-        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9tx8qa\\cmTC_2fc53.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rbqr9i\\cmTC_6afe7.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9tx8qa\\Debug\\".
-          Creating directory "cmTC_2fc53.dir\\Debug\\cmTC_2fc53.tlog\\".
+          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rbqr9i\\Debug\\".
+          Creating directory "cmTC_6afe7.dir\\Debug\\cmTC_6afe7.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_2fc53.dir\\Debug\\cmTC_2fc53.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_2fc53.dir\\Debug\\cmTC_2fc53.tlog\\unsuccessfulbuild".
+          Creating "cmTC_6afe7.dir\\Debug\\cmTC_6afe7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_6afe7.dir\\Debug\\cmTC_6afe7.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_2fc53.dir\\Debug\\\\" /Fd"cmTC_2fc53.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_6afe7.dir\\Debug\\\\" /Fd"cmTC_6afe7.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36246 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_2fc53.dir\\Debug\\\\" /Fd"cmTC_2fc53.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_6afe7.dir\\Debug\\\\" /Fd"cmTC_6afe7.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9tx8qa\\Debug\\cmTC_2fc53.exe" /INCREMENTAL /ILK:"cmTC_2fc53.dir\\Debug\\cmTC_2fc53.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-9tx8qa/Debug/cmTC_2fc53.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-9tx8qa/Debug/cmTC_2fc53.lib" /MACHINE:X64  /machine:x64 cmTC_2fc53.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_2fc53.vcxproj -> C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9tx8qa\\Debug\\cmTC_2fc53.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rbqr9i\\Debug\\cmTC_6afe7.exe" /INCREMENTAL /ILK:"cmTC_6afe7.dir\\Debug\\cmTC_6afe7.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-rbqr9i/Debug/cmTC_6afe7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-rbqr9i/Debug/cmTC_6afe7.lib" /MACHINE:X64  /machine:x64 cmTC_6afe7.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_6afe7.vcxproj -> C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rbqr9i\\Debug\\cmTC_6afe7.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_2fc53.dir\\Debug\\cmTC_2fc53.tlog\\unsuccessfulbuild".
-          Touching "cmTC_2fc53.dir\\Debug\\cmTC_2fc53.tlog\\cmTC_2fc53.lastbuildstate".
-        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9tx8qa\\cmTC_2fc53.vcxproj" (default targets).
+          Deleting file "cmTC_6afe7.dir\\Debug\\cmTC_6afe7.tlog\\unsuccessfulbuild".
+          Touching "cmTC_6afe7.dir\\Debug\\cmTC_6afe7.tlog\\cmTC_6afe7.lastbuildstate".
+        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rbqr9i\\cmTC_6afe7.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.44
+        Time Elapsed 00:00:00.41
         
       exitCode: 0
   -
@@ -3362,8 +3440,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-gvtkrk"
-      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-gvtkrk"
+      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-elagvk"
+      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-elagvk"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -3378,39 +3456,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-gvtkrk'
+        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-elagvk'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9d9a1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ff657.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 17/06/2026 15:29:20.
+        Build started 18/06/2026 10:05:54.
         
-        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gvtkrk\\cmTC_9d9a1.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-elagvk\\cmTC_ff657.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gvtkrk\\Debug\\".
-          Creating directory "cmTC_9d9a1.dir\\Debug\\cmTC_9d9a1.tlog\\".
+          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-elagvk\\Debug\\".
+          Creating directory "cmTC_ff657.dir\\Debug\\cmTC_ff657.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_9d9a1.dir\\Debug\\cmTC_9d9a1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_9d9a1.dir\\Debug\\cmTC_9d9a1.tlog\\unsuccessfulbuild".
+          Creating "cmTC_ff657.dir\\Debug\\cmTC_ff657.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_ff657.dir\\Debug\\cmTC_ff657.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_9d9a1.dir\\Debug\\\\" /Fd"cmTC_9d9a1.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_ff657.dir\\Debug\\\\" /Fd"cmTC_ff657.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36246 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_9d9a1.dir\\Debug\\\\" /Fd"cmTC_9d9a1.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_ff657.dir\\Debug\\\\" /Fd"cmTC_ff657.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gvtkrk\\Debug\\cmTC_9d9a1.exe" /INCREMENTAL /ILK:"cmTC_9d9a1.dir\\Debug\\cmTC_9d9a1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-gvtkrk/Debug/cmTC_9d9a1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-gvtkrk/Debug/cmTC_9d9a1.lib" /MACHINE:X64  /machine:x64 cmTC_9d9a1.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_9d9a1.vcxproj -> C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gvtkrk\\Debug\\cmTC_9d9a1.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-elagvk\\Debug\\cmTC_ff657.exe" /INCREMENTAL /ILK:"cmTC_ff657.dir\\Debug\\cmTC_ff657.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-elagvk/Debug/cmTC_ff657.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-elagvk/Debug/cmTC_ff657.lib" /MACHINE:X64  /machine:x64 cmTC_ff657.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_ff657.vcxproj -> C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-elagvk\\Debug\\cmTC_ff657.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_9d9a1.dir\\Debug\\cmTC_9d9a1.tlog\\unsuccessfulbuild".
-          Touching "cmTC_9d9a1.dir\\Debug\\cmTC_9d9a1.tlog\\cmTC_9d9a1.lastbuildstate".
-        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gvtkrk\\cmTC_9d9a1.vcxproj" (default targets).
+          Deleting file "cmTC_ff657.dir\\Debug\\cmTC_ff657.tlog\\unsuccessfulbuild".
+          Touching "cmTC_ff657.dir\\Debug\\cmTC_ff657.tlog\\cmTC_ff657.lastbuildstate".
+        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-elagvk\\cmTC_ff657.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.47
+        Time Elapsed 00:00:00.41
         
       exitCode: 0
   -
@@ -3449,8 +3527,8 @@ events:
     checks:
       - "Looking for include file unistd.h"
     directories:
-      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-shilic"
-      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-shilic"
+      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-mvasa7"
+      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-mvasa7"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -3463,39 +3541,39 @@ events:
       variable: "HAVE_UNISTD_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-shilic'
+        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-mvasa7'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_330f8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_69620.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 17/06/2026 15:29:21.
+        Build started 18/06/2026 10:05:54.
         
-        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shilic\\cmTC_330f8.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvasa7\\cmTC_69620.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shilic\\Debug\\".
-          Creating directory "cmTC_330f8.dir\\Debug\\cmTC_330f8.tlog\\".
+          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvasa7\\Debug\\".
+          Creating directory "cmTC_69620.dir\\Debug\\cmTC_69620.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_330f8.dir\\Debug\\cmTC_330f8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_330f8.dir\\Debug\\cmTC_330f8.tlog\\unsuccessfulbuild".
+          Creating "cmTC_69620.dir\\Debug\\cmTC_69620.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_69620.dir\\Debug\\cmTC_69620.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_330f8.dir\\Debug\\\\" /Fd"cmTC_330f8.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shilic\\HAVE_UNISTD_H.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_69620.dir\\Debug\\\\" /Fd"cmTC_69620.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvasa7\\HAVE_UNISTD_H.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36246 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_330f8.dir\\Debug\\\\" /Fd"cmTC_330f8.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shilic\\HAVE_UNISTD_H.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_69620.dir\\Debug\\\\" /Fd"cmTC_69620.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvasa7\\HAVE_UNISTD_H.c"
           HAVE_UNISTD_H.c
-        C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shilic\\HAVE_UNISTD_H.c(2,10): error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shilic\\cmTC_330f8.vcxproj]
-        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shilic\\cmTC_330f8.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvasa7\\HAVE_UNISTD_H.c(2,10): error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvasa7\\cmTC_69620.vcxproj]
+        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvasa7\\cmTC_69620.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shilic\\cmTC_330f8.vcxproj" (default target) (1) ->
+        "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvasa7\\cmTC_69620.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shilic\\HAVE_UNISTD_H.c(2,10): error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shilic\\cmTC_330f8.vcxproj]
+          C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvasa7\\HAVE_UNISTD_H.c(2,10): error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvasa7\\cmTC_69620.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.26
+        Time Elapsed 00:00:00.27
         
       exitCode: 1
   -
@@ -3506,8 +3584,8 @@ events:
     checks:
       - "Looking for include file humdrum.h"
     directories:
-      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-ke2l2i"
-      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-ke2l2i"
+      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-bllfhd"
+      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-bllfhd"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -3520,39 +3598,39 @@ events:
       variable: "HAVE_HUMDRUM_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-ke2l2i'
+        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-bllfhd'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f4d54.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_88493.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 17/06/2026 15:29:22.
+        Build started 18/06/2026 10:05:55.
         
-        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ke2l2i\\cmTC_f4d54.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bllfhd\\cmTC_88493.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ke2l2i\\Debug\\".
-          Creating directory "cmTC_f4d54.dir\\Debug\\cmTC_f4d54.tlog\\".
+          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bllfhd\\Debug\\".
+          Creating directory "cmTC_88493.dir\\Debug\\cmTC_88493.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_f4d54.dir\\Debug\\cmTC_f4d54.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_f4d54.dir\\Debug\\cmTC_f4d54.tlog\\unsuccessfulbuild".
+          Creating "cmTC_88493.dir\\Debug\\cmTC_88493.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_88493.dir\\Debug\\cmTC_88493.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_f4d54.dir\\Debug\\\\" /Fd"cmTC_f4d54.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ke2l2i\\HAVE_HUMDRUM_H.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_88493.dir\\Debug\\\\" /Fd"cmTC_88493.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bllfhd\\HAVE_HUMDRUM_H.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36246 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_f4d54.dir\\Debug\\\\" /Fd"cmTC_f4d54.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ke2l2i\\HAVE_HUMDRUM_H.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_88493.dir\\Debug\\\\" /Fd"cmTC_88493.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bllfhd\\HAVE_HUMDRUM_H.c"
           HAVE_HUMDRUM_H.c
-        C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ke2l2i\\HAVE_HUMDRUM_H.c(2,10): error C1083: Cannot open include file: 'humdrum.h': No such file or directory [C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ke2l2i\\cmTC_f4d54.vcxproj]
-        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ke2l2i\\cmTC_f4d54.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bllfhd\\HAVE_HUMDRUM_H.c(2,10): error C1083: Cannot open include file: 'humdrum.h': No such file or directory [C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bllfhd\\cmTC_88493.vcxproj]
+        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bllfhd\\cmTC_88493.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ke2l2i\\cmTC_f4d54.vcxproj" (default target) (1) ->
+        "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bllfhd\\cmTC_88493.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ke2l2i\\HAVE_HUMDRUM_H.c(2,10): error C1083: Cannot open include file: 'humdrum.h': No such file or directory [C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ke2l2i\\cmTC_f4d54.vcxproj]
+          C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bllfhd\\HAVE_HUMDRUM_H.c(2,10): error C1083: Cannot open include file: 'humdrum.h': No such file or directory [C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bllfhd\\cmTC_88493.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.25
+        Time Elapsed 00:00:00.24
         
       exitCode: 1
   -
@@ -3563,8 +3641,8 @@ events:
     checks:
       - "Looking for include file sys/io.h"
     directories:
-      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-ik2xq7"
-      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-ik2xq7"
+      source: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-6m65ge"
+      binary: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-6m65ge"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -3577,39 +3655,39 @@ events:
       variable: "HAVE_SYS_IO_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-ik2xq7'
+        Change Dir: 'C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/build/CMakeFiles/CMakeScratch/TryCompile-6m65ge'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_445d3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7177f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 17/06/2026 15:29:22.
+        Build started 18/06/2026 10:05:56.
         
-        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ik2xq7\\cmTC_445d3.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6m65ge\\cmTC_7177f.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ik2xq7\\Debug\\".
-          Creating directory "cmTC_445d3.dir\\Debug\\cmTC_445d3.tlog\\".
+          Creating directory "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6m65ge\\Debug\\".
+          Creating directory "cmTC_7177f.dir\\Debug\\cmTC_7177f.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_445d3.dir\\Debug\\cmTC_445d3.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_445d3.dir\\Debug\\cmTC_445d3.tlog\\unsuccessfulbuild".
+          Creating "cmTC_7177f.dir\\Debug\\cmTC_7177f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7177f.dir\\Debug\\cmTC_7177f.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_445d3.dir\\Debug\\\\" /Fd"cmTC_445d3.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ik2xq7\\HAVE_SYS_IO_H.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_7177f.dir\\Debug\\\\" /Fd"cmTC_7177f.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6m65ge\\HAVE_SYS_IO_H.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36246 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_445d3.dir\\Debug\\\\" /Fd"cmTC_445d3.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ik2xq7\\HAVE_SYS_IO_H.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_7177f.dir\\Debug\\\\" /Fd"cmTC_7177f.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6m65ge\\HAVE_SYS_IO_H.c"
           HAVE_SYS_IO_H.c
-        C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ik2xq7\\HAVE_SYS_IO_H.c(2,10): error C1083: Cannot open include file: 'sys/io.h': No such file or directory [C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ik2xq7\\cmTC_445d3.vcxproj]
-        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ik2xq7\\cmTC_445d3.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6m65ge\\HAVE_SYS_IO_H.c(2,10): error C1083: Cannot open include file: 'sys/io.h': No such file or directory [C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6m65ge\\cmTC_7177f.vcxproj]
+        Done Building Project "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6m65ge\\cmTC_7177f.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ik2xq7\\cmTC_445d3.vcxproj" (default target) (1) ->
+        "C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6m65ge\\cmTC_7177f.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ik2xq7\\HAVE_SYS_IO_H.c(2,10): error C1083: Cannot open include file: 'sys/io.h': No such file or directory [C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ik2xq7\\cmTC_445d3.vcxproj]
+          C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6m65ge\\HAVE_SYS_IO_H.c(2,10): error C1083: Cannot open include file: 'sys/io.h': No such file or directory [C:\\Users\\Sebastian\\OneDrive\\Documents\\GitHub\\Retro-game-Sound-Mixer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6m65ge\\cmTC_7177f.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.25
+        Time Elapsed 00:00:00.24
         
       exitCode: 1
 ...
