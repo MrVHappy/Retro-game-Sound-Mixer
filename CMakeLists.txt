@@ -9,6 +9,8 @@ project(RetroSoundMixer)
 set(CMAKE_CXX_STANDARD 17)
 
 find_package(FluidSynth CONFIG REQUIRED)
+find_package(SndFile CONFIG REQUIRED)
+find_package(mp3lame CONFIG REQUIRED)
 
 add_subdirectory(midifile)
 
@@ -24,4 +26,6 @@ target_link_libraries(RetroSoundMixer PRIVATE
     debug ${CMAKE_BINARY_DIR}/midifile/Debug/midifile.lib
     optimized ${CMAKE_BINARY_DIR}/midifile/Release/midifile.lib
     FluidSynth::libfluidsynth
+    SndFile::sndfile
+    mp3lame::mp3lame
 )

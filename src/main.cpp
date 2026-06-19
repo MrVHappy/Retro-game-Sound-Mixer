@@ -2,6 +2,7 @@
 // https://www.fluidsynth.org/wiki/api/examples/example/
 // https://www.fluidsynth.org/api/MIDIPlayer.html
 // https://www.fluidsynth.org/wiki/usage/file-renderer/
+// https://github.com/libsndfile/libsndfile/blob/master/examples/sfprocess.c Copyright (C) 2001-2013 Erik de Castro Lopo <erikd@mega-nerd.com>
 
 #include <fluidsynth.h>
 #include <MidiFile.h>
@@ -11,7 +12,9 @@
 #include <list>
 #include <map>
 #include <algorithm>
-
+#include <sndfile.h>
+#include <lame/lame.h>
+#include <fstream>
 
 #if defined(_WIN32)
 #define NOMINMAX 
@@ -34,7 +37,54 @@
 #endif
 #include <vector>
 
+void wav2mp3(char* file_location){
+    // the buffer size for each sample
+    const short BUFFER_SIZE = 8192;
+    const char* MP3_LOC = "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/MP3/example.mp3";
 
+    static short int data[BUFFER_SIZE];
+    int read_count;
+    SF_INFO info;
+    memset(&info,0, sizeof(info));
+    // opens the wav file and sets to read
+    SNDFILE *file = sf_open(file_location,SFM_READ,&info);
+    // sets a file to be written to 
+    FILE *output = fopen(MP3_LOC,"wb");
+
+    // checks to see if the file has been extracted successfully
+    if (file == NULL){
+        std::cout << "ERROR: Unable to Open file" << std::endl;
+        return;
+    }
+    if (output == NULL){
+        std::cout << "ERROR: Unable to Open file" << std::endl;
+        return;
+    }
+    
+    lame_t encoder = lame_init();
+    int sample_rate = lame_set_in_samplerate(encoder,info.samplerate);
+    int channel_count = lame_set_num_channels(encoder,info.channels);
+    int bit_rate = lame_set_brate(encoder, 320);
+    int quality = lame_set_quality(encoder,0);
+    lame_init_params(encoder);
+
+    // unsigned char* MP3_LOC_US = (unsigned char*) MP3_LOC;
+    unsigned char MP3_BUFFER[BUFFER_SIZE * 4];
+    
+    while ((read_count = (int) sf_read_short(file,data,BUFFER_SIZE))){
+        int num_samples = (int)(read_count / info.channels);
+        int Bytes = lame_encode_buffer_interleaved(encoder,data,num_samples,MP3_BUFFER,sizeof(MP3_BUFFER));
+        
+        fwrite(MP3_BUFFER,1,Bytes,output);
+        
+    }
+    int flush_bytes = lame_encode_flush(encoder, MP3_BUFFER, sizeof(MP3_BUFFER));
+    fwrite(MP3_BUFFER,1,flush_bytes,output);
+    sf_close(file);
+    fclose(output);
+    lame_close(encoder);
+    // sf_close(output);
+}
 void clean_up(fluid_settings_t* settings,fluid_synth_t* synth,fluid_audio_driver_t* adriver,fluid_player_t* player){
     if (player != NULL) {
         delete_fluid_player(player);
@@ -502,14 +552,6 @@ int main() {
         goto err;
     }
 
-    // // Create audio driver
-    // adriver = new_fluid_audio_driver(settings, synth);
-    // // checks to see if the audio driver has been created successfully
-    // if (adriver == NULL) {
-    //     puts("Failed to create audio driver");
-    //     goto err;
-    // }
-
     // create the player
     player = new_fluid_player(synth);
     if (player == NULL){
@@ -539,6 +581,7 @@ int main() {
             break;
         }
     }
+    wav2mp3(WAV);
     fluid_player_stop(player);
     fluid_player_join(player);
 // clean up

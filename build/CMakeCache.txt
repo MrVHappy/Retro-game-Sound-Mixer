@@ -236,8 +236,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 // during RELWITHDEBINFO builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/scripts/buildsystems/vcpkg.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=...vcpkg.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -256,6 +256,9 @@ RetroSoundMixer_SOURCE_DIR:STATIC=C:/Users/Sebastian/OneDrive/Documents/GitHub/R
 
 //Use static CRT libraries
 STATIC_CRT:BOOL=OFF
+
+//The directory containing a CMake configuration file for SndFile.
+SndFile_DIR:PATH=C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/share/SndFile
 
 //Automatically copy dependencies into the output directory for
 // executables.
@@ -311,6 +314,9 @@ midifile_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 midifile_SOURCE_DIR:STATIC=C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/midifile
+
+//The directory containing a CMake configuration file for mp3lame.
+mp3lame_DIR:PATH=C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/share/mp3lame
 
 
 ########################
