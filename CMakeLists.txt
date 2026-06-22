@@ -18,7 +18,7 @@ add_executable(RetroSoundMixer
     src/main.cpp
 )
 
-target_include_directories(RetroSoundMixer PRIVATE
+target_include_directories(RetroSoundMixer PRIVATEy
     midifile/include
 )
 
