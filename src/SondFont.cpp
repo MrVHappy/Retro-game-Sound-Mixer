@@ -13,37 +13,35 @@ class SoundFont{
         // indicates if the instrument is supported
         std::map<int,bool> instruments;
         
-
-    // constructor
-    SoundFont(char* file){
-        this->file = file;
-        
-        // variables used for sound font analysis 
-        fluid_settings_t* settings = new_fluid_settings();
-        fluid_synth_t* synth = new_fluid_synth(settings);
-        int sfont_ID = fluid_synth_sfload(synth,this->file, 1);
-        fluid_sfont_t* sfont = fluid_synth_get_sfont_by_id(synth,sfont_ID);
-
-        // setup for instruments
-        // loops through all the instruments
-        for (int i = 0; i < 127; i++){
-            bool isSupported;
-            // if fluid_sfont_get_preset returns NULL then instrument is not supported
-            if (fluid_sfont_get_preset(sfont,0,i) == NULL){
-                isSupported = false;
-            }
-            else{
-                // else is supported
-                isSupported = true;
-            }
-            // add instrument data to map
-            instruments[i] = isSupported;
-        }
-        clean_up(settings,synth,sfont);
-    }
-
     
     public:
+        // constructor
+        SoundFont(char* file){
+            this->file = file;
+            
+            // variables used for sound font analysis 
+            fluid_settings_t* settings = new_fluid_settings();
+            fluid_synth_t* synth = new_fluid_synth(settings);
+            int sfont_ID = fluid_synth_sfload(synth,this->file, 1);
+            fluid_sfont_t* sfont = fluid_synth_get_sfont_by_id(synth,sfont_ID);
+
+            // setup for instruments
+            // loops through all the instruments
+            for (int i = 0; i < 128; i++){
+                bool isSupported;
+                // if fluid_sfont_get_preset returns NULL then instrument is not supported
+                if (fluid_sfont_get_preset(sfont,0,i) == NULL){
+                    isSupported = false;
+                }
+                else{
+                    // else is supported
+                    isSupported = true;
+                }
+                // add instrument data to map
+                instruments[i] = isSupported;
+            }
+            clean_up(settings,synth);
+        }
         // return the file location of the soundfont
         char* get_file(){
             return this->file;
@@ -51,7 +49,7 @@ class SoundFont{
         // checks if the sound font supports the instrument
         bool verify_instrument(int instrument_num){
             // returns false if instrument_num is out of range
-            if(instrument_num < 0 || instrument_num >126){
+            if(instrument_num < 0 || instrument_num >127){
                 return false;
             }
             return instruments[instrument_num];
@@ -73,15 +71,13 @@ class SoundFont{
                 }
             }
         }
-        void clean_up(fluid_settings_t* settings,fluid_synth_t* synth, fluid_sfont_t* sfont){
+        void clean_up(fluid_settings_t* settings,fluid_synth_t* synth){
             if (synth != NULL) {
                 delete_fluid_synth(synth);
             }
             if (settings != NULL) {
                 delete_fluid_settings(settings);
             }
-            if (sfont != NULL){
-                delete_fluid_sfont(sfont);
-            }
+            
         }
 };
