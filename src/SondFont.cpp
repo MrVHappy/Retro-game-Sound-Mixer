@@ -23,7 +23,7 @@ class SoundFont{
         fluid_synth_t* synth = new_fluid_synth(settings);
         int sfont_ID = fluid_synth_sfload(synth,this->file, 1);
         fluid_sfont_t* sfont = fluid_synth_get_sfont_by_id(synth,sfont_ID);
-        
+
         // setup for instruments
         // loops through all the instruments
         for (int i = 0; i < 127; i++){
@@ -73,7 +73,7 @@ class SoundFont{
                 }
             }
         }
-        void clean_up(fluid_settings_t* settings,fluid_synth_t*, fluid_sfont_t* sfont){
+        void clean_up(fluid_settings_t* settings,fluid_synth_t* synth, fluid_sfont_t* sfont){
             if (synth != NULL) {
                 delete_fluid_synth(synth);
             }
