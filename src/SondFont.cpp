@@ -8,7 +8,7 @@ class SoundFont{
     // private attributes
     private: 
         // file location of the sound font
-        char* file;
+        std::string file;
         // map where it stores the instrument number and a bool that
         // indicates if the instrument is supported
         std::map<int,bool> instruments;
@@ -22,7 +22,7 @@ class SoundFont{
             // variables used for sound font analysis 
             fluid_settings_t* settings = new_fluid_settings();
             fluid_synth_t* synth = new_fluid_synth(settings);
-            int sfont_ID = fluid_synth_sfload(synth,this->file, 1);
+            int sfont_ID = fluid_synth_sfload(synth,this->file.c_str(), 1);
             fluid_sfont_t* sfont = fluid_synth_get_sfont_by_id(synth,sfont_ID);
 
             // setup for instruments
@@ -43,16 +43,16 @@ class SoundFont{
             clean_up(settings,synth);
         }
         // return the file location of the soundfont
-        char* get_file(){
+        std::string get_file(){
             return this->file;
         }
         // checks if the sound font supports the instrument
-        bool verify_instrument(int instrument_num){
+        bool verify_instrument(int instrument_num)const{
             // returns false if instrument_num is out of range
             if(instrument_num < 0 || instrument_num >127){
                 return false;
             }
-            return instruments[instrument_num];
+            return instruments.at(instrument_num);
         }
         // outputs all of the supported instruments
         void display_instruments(){
