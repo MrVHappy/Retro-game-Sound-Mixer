@@ -43,7 +43,7 @@ class SoundFont{
             clean_up(settings,synth);
         }
         // return the file location of the soundfont
-        std::string get_file(){
+        std::string get_file()const{
             return this->file;
         }
         // checks if the sound font supports the instrument
