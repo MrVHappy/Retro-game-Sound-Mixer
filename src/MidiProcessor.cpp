@@ -35,36 +35,16 @@
 
 class MidiProcessor{
     private:
-        fluid_settings_t* settings = NULL;
-        fluid_synth_t* synth = NULL;
-        fluid_audio_driver_t* adriver = NULL;
-        fluid_player_t* player = NULL;
-
+        
         const std::string DESTINATION = "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/Saved songs/";
-        const std::string midi_file;
+        std::string file;
 
-        SoundFont sound_font = NULL;
+        SoundFont sound_font;
 
     public:
-        // clean up when class is destroyed 
-        MidiProcessor(SoundFont sound_font){
-            this->sound_font = sound_font;
-            this->settings = new_fluid_settings();
-            // identify where the file location of the sound file
-            fluid_settings_setstr(this->settings,"audio.file.name",WAV);
-            // identify where the file location of the sound file
-            fluid_settings_setstr(settings,"audio.file.name",WAV);
+        // constructor
+        MidiProcessor(SoundFont sound_font, std::string file): sound_font(sound_font), file(file){}
 
-            // use the number of samples processed as timing source rather than sys timer
-            fluid_settings_setstr(this->settings, "player.timing-source", "sample");
-            // no need to pin sample data due to being a non-realtime scenario
-            fluid_settings_setint(this->settings,"synth.lock-memory",0);
-            // Create synth
-            this->synth = new_fluid_synth(this->settings);
-        }
-        ~MidiProcessor(){
-            clean_up(settings,synth,adriver,player);
-        }
         void clean_up(fluid_settings_t* settings,fluid_synth_t* synth,fluid_audio_driver_t* adriver,fluid_player_t* player){
             if (player != NULL) {
                 delete_fluid_player(player);
@@ -79,7 +59,8 @@ class MidiProcessor{
                 delete_fluid_settings(settings);
             }
         }
-        int adjust_instrument(std::string sf_file, int instrument,smf::MidiEvent& event, int event_index, int track, smf::MidiFile midi_file){
+        
+        int adjust_instrument(int instrument,smf::MidiEvent& event, int event_index, int track, smf::MidiFile midi_file){
             std::string choice;
             std::cout << "IN THE ADJUSTING STAGE" << std::endl;
             // create a temporary midi file
@@ -96,6 +77,7 @@ class MidiProcessor{
             midi_track.setTicksPerQuarterNote(480);
             
             // allpcating events to the track
+            // midi_track.allocateEvents(0,2);
             midi_track.addEvent(0,0,instrument_data);
             midi_track.addEvent(0,event);
             // Add a window of events around the patch change (e.g. next 200 events)
@@ -108,18 +90,17 @@ class MidiProcessor{
             
             // midi track will be saved in RAM
             midi_track.write(TEMP);
-
-
             // std::ostringstream memory_buffer;
             // midi_track.write(memory_buffer);
             // std::string memory_location = memory_buffer.str();
 
             // setting up midi player
-            std::list<int> sequence;
-            int sfont_ID, i, key;
-            int option = 4;
-            std::string input;
-            const char* FONT_TYPE = nullptr;
+            fluid_settings_t* settings = NULL;
+            fluid_synth_t* synth = NULL;
+            fluid_audio_driver_t* adriver = NULL;
+            fluid_player_t* player = NULL;
+
+            int sfont_ID;
                     
             // Create settings
             settings = new_fluid_settings();
@@ -143,7 +124,7 @@ class MidiProcessor{
             // Load SoundFont
             std::cout << "Loading SF2..." << std::endl;
 
-            sfont_ID = fluid_synth_sfload(synth,sf_file.c_str(), 1);
+            sfont_ID = fluid_synth_sfload(synth,this->sound_font.get_file().c_str(), 1);
             // checks to see if the sound font has been created successfully
             if (sfont_ID == FLUID_FAILED) {
                 puts("Loading SoundFont failed! Check the file path and try again.");
@@ -194,10 +175,10 @@ class MidiProcessor{
 
         }
 
-        std::string midi_processing(const std::string file, std::string sf_file){
+        std::string midi_processing(){
             // reads the midi file to and checks if the file exists
             smf::MidiFile midi_file;
-            if(!midi_file.read(file)){
+            if(!midi_file.read(this->file)){
                 std::cout << "ERROR:\tFailed to read MIDI file! Check the file path and try again." << std::endl;
                 return "error";
             }
@@ -259,7 +240,7 @@ class MidiProcessor{
                         std::cin.ignore();
                         // if yes then allow the user to select a new instrument
                         if (option == "y" || option == "Y"){
-                            int new_instrument = adjust_instrument(sf_file,current_instrument,current_event, event,track,midi_file);
+                            int new_instrument = adjust_instrument(current_instrument,current_event, event,track,midi_file);
                             std::cout << "Command Byte of Current event: "<<current_event.getCommandByte() << std::endl;
                             while(new_instrument == -1){
                                 std:: cout << "0-127 avalable" << std::endl;
@@ -282,7 +263,7 @@ class MidiProcessor{
                                 std::cout << "Instrument has Changed successfully" << std::endl;
 
                                 std::cout << "Calling adjust_instrument" << std::endl;
-                                new_instrument = adjust_instrument(sf_file,new_instrument,current_event, event,track,midi_file);
+                                new_instrument = adjust_instrument(new_instrument,current_event, event,track,midi_file);
                             }
                                 
                         }
@@ -312,11 +293,11 @@ class MidiProcessor{
         }
 
 
-        void view_midi_info(const std::string file){
+        void view_midi_info(){
             // reads the MIDI file and extracts information about the tracks, events, and timing
             smf::MidiFile midi_file;
             // checks to see if the file was read successfully, if not print an error message and return
-            if(!midi_file.read(file)){
+            if(!midi_file.read(this->file)){
                 std::cout << "Failed to read MIDI file! Check the file path and try again." << std::endl;
                 return;
             }
