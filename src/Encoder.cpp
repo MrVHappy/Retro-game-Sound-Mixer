@@ -44,7 +44,7 @@ class Encoder{
         void wav2mp3(){
             // the buffer size for each samples
             const short BUFFER_SIZE = 8192;
-            static short int data[BUFFER_SIZE];
+            // static short int data[BUFFER_SIZE];
             int read_count;
             SF_INFO info;
             memset(&info,0, sizeof(info));
@@ -52,7 +52,7 @@ class Encoder{
             SNDFILE *file = sf_open(this->file_location,SFM_READ,&info);
             // sets a file to be written to 
             FILE *output = fopen(MP3_LOC,"wb");
-
+            
             // checks to see if the file has been extracted successfully
             if (file == NULL){
                 std::cout << "ERROR: Unable to Open file" << std::endl;
@@ -62,7 +62,9 @@ class Encoder{
                 std::cout << "ERROR: Unable to Open file" << std::endl;
                 return;
             }
-            
+            static std::vector<short int> data;
+            data.resize(BUFFER_SIZE * info.channels);
+
             lame_t encoder = lame_init();
             int sample_rate = lame_set_in_samplerate(encoder,info.samplerate);
             int channel_count = lame_set_num_channels(encoder,info.channels);
@@ -73,12 +75,9 @@ class Encoder{
             // unsigned char* MP3_LOC_US = (unsigned char*) MP3_LOC;
             unsigned char MP3_BUFFER[BUFFER_SIZE * 4];
             
-            while ((read_count = (int) sf_read_short(file,data,BUFFER_SIZE))){
-                int num_samples = (int)(read_count / info.channels);
-                int Bytes = lame_encode_buffer_interleaved(encoder,data,num_samples,MP3_BUFFER,sizeof(MP3_BUFFER));
-                
+            while ((read_count = (int) sf_readf_short(file,data.data(),BUFFER_SIZE))){
+                int Bytes = lame_encode_buffer_interleaved(encoder,data.data(),read_count,MP3_BUFFER,sizeof(MP3_BUFFER));
                 fwrite(MP3_BUFFER,1,Bytes,output);
-                
             }
             int flush_bytes = lame_encode_flush(encoder, MP3_BUFFER, sizeof(MP3_BUFFER));
             fwrite(MP3_BUFFER,1,flush_bytes,output);
