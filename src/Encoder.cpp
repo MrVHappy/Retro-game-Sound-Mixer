@@ -33,56 +33,93 @@
 
 class Encoder{
     private:
-        char* file_location;
-        const char* MP3_LOC = "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/MP3/example.mp3";
+        std::string file_location;
+        const std::string MP3_LOC = "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/MP3/example.mp3";
         
 
     public:
-        Encoder(char* file_location){
+        // constructor
+        Encoder(std::string file_location){
             this->file_location = file_location;
         }
+        void clean_up(SNDFILE *file, FILE *output, lame_t encoder){
+            if (file != NULL)
+                sf_close(file);
+            if (output != NULL)
+                fclose(output);
+            if (encoder != NULL)
+                lame_close(encoder);
+        }
+
+
         void wav2mp3(){
             // the buffer size for each samples
             const short BUFFER_SIZE = 8192;
             // static short int data[BUFFER_SIZE];
             int read_count;
+            // information about the WAV file
             SF_INFO info;
             memset(&info,0, sizeof(info));
             // opens the wav file and sets to read
-            SNDFILE *file = sf_open(this->file_location,SFM_READ,&info);
+            SNDFILE *file = sf_open(this->file_location.c_str(),SFM_READ,&info);
             // sets a file to be written to 
-            FILE *output = fopen(MP3_LOC,"wb");
+            FILE *output = fopen(MP3_LOC.c_str(),"wb");
             
             // checks to see if the file has been extracted successfully
             if (file == NULL){
                 std::cout << "ERROR: Unable to Open file" << std::endl;
                 return;
             }
+            // checks to see if the file location has been found
             if (output == NULL){
                 std::cout << "ERROR: Unable to Open file" << std::endl;
                 return;
             }
+            // stores the sound data
             static std::vector<short int> data;
             data.resize(BUFFER_SIZE * info.channels);
 
+            // initialise the encoder
             lame_t encoder = lame_init();
-            int sample_rate = lame_set_in_samplerate(encoder,info.samplerate);
-            int channel_count = lame_set_num_channels(encoder,info.channels);
-            int bit_rate = lame_set_brate(encoder, 320);
-            int quality = lame_set_quality(encoder,0);
-            lame_init_params(encoder);
+            // encoder config and error checking
+            if (lame_set_in_samplerate(encoder,info.samplerate) != 0){
+                std::cout << "ERROR:\t failed to set sample rate" << std::endl;
+                clean_up(file,output,encoder);
+                return;
+            }
+            if (lame_set_num_channels(encoder,info.channels) != 0){
+                std::cout << "ERROR:\t failed to set the number of channels" << std::endl;
+                clean_up(file,output,encoder);
+                return;
+            }
+            if (lame_set_brate(encoder, 320) != 0){
+                std::cout << "ERROR:\t failed to set bit rate" << std::endl;
+                clean_up(file,output,encoder);
+                return;
+            }
+            if (lame_set_quality(encoder,0) !=0){
+                std::cout << "ERROR:\t failed to set quality" << std::endl;
+                clean_up(file,output,encoder);
+                return;
+            }
+            if(lame_init_params(encoder) < 0){
+                std::cout << "ERROR:\t failed to set up encoder parameters" << std::endl;
+                clean_up(file,output,encoder);
+                return;
+            }
 
-            // unsigned char* MP3_LOC_US = (unsigned char*) MP3_LOC;
+            // output file buffer
             unsigned char MP3_BUFFER[BUFFER_SIZE * 4];
             
+            // encoding stage
             while ((read_count = (int) sf_readf_short(file,data.data(),BUFFER_SIZE))){
                 int Bytes = lame_encode_buffer_interleaved(encoder,data.data(),read_count,MP3_BUFFER,sizeof(MP3_BUFFER));
                 fwrite(MP3_BUFFER,1,Bytes,output);
             }
+            // flush remaining data
             int flush_bytes = lame_encode_flush(encoder, MP3_BUFFER, sizeof(MP3_BUFFER));
             fwrite(MP3_BUFFER,1,flush_bytes,output);
-            sf_close(file);
-            fclose(output);
-            lame_close(encoder);
+            // clean up
+            clean_up(file,output,encoder);
     }
 };
