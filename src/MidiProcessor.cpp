@@ -10,6 +10,7 @@
 #include <lame/lame.h>
 #include <fstream>
 #include "SoundFont.h"
+#include "Encoder.h"
 
 #if defined(_WIN32)
 #define NOMINMAX 
@@ -44,7 +45,17 @@ class MidiProcessor{
     public:
         // constructor
         MidiProcessor(SoundFont sound_font, std::string file): sound_font(sound_font), file(file){}
-
+        void clean_up(fluid_settings_t* settings,fluid_synth_t* synth, fluid_player_t*player){
+            if (player != NULL) {
+                delete_fluid_player(player);
+            }
+            if (synth != NULL) {
+                delete_fluid_synth(synth);
+            }
+            if (settings != NULL) {
+                delete_fluid_settings(settings);
+            }
+        }
         void clean_up(fluid_settings_t* settings,fluid_synth_t* synth,fluid_audio_driver_t* adriver,fluid_player_t* player){
             if (player != NULL) {
                 delete_fluid_player(player);
@@ -398,5 +409,80 @@ class MidiProcessor{
             std::cout << "Total number of note on events: " << note_on_count << std::endl;
             std::cout << "Total number of note off events: " << note_off_count << std::endl;
             std::cout << "Total number of instrument change events: " << instrument_change_count << std::endl;
+        }
+        void render(){
+            // setting up midi player
+            fluid_settings_t* settings = NULL;
+            fluid_synth_t* synth = NULL;
+            fluid_audio_driver_t* adriver = NULL;
+            fluid_player_t* player = NULL;
+            fluid_file_renderer_t* renderer = NULL;
+            // Create settings
+            settings = new_fluid_settings();
+            // checks to see if the settings has been created successfully
+            if (settings == NULL) {
+                puts("settings creation failed");
+                goto err;
+            }
+            // identify where the file location of the sound file
+            fluid_settings_setstr(settings,"audio.file.name",WAV);
+
+            // use the number of samples processed as timing source rather than sys timer
+            fluid_settings_setstr(settings, "player.timing-source", "sample");
+            // no need to pin sample data due to being a non-realtime scenario
+            fluid_settings_setint(settings,"synth.lock-memory",0);
+            // Create synth
+            synth = new_fluid_synth(settings);
+            // checks to see if the synth has been created successfully
+            if (synth == NULL) {
+                puts("synth creation failed");
+                goto err;
+            }
+
+            // Load SoundFont
+            std::cout << "Loading SF2..." << std::endl;
+
+            int sfont_ID = fluid_synth_sfload(synth,sound_font.get_file().c_str(), 1);
+            // checks to see if the sound font has been created successfully
+            if (sfont_ID == FLUID_FAILED) {
+                puts("Loading SoundFont failed! Check the file path and try again.");
+                goto err;
+            }
+
+            // create the player
+            player = new_fluid_player(synth);
+            if (player == NULL){
+                puts("Failed to create player");
+                goto err;
+            }
+
+            if (fluid_player_add(player, file.c_str()) != FLUID_OK) {
+                puts("Failed to add MIDI file to player! Check the file path and try again.");
+                goto err;
+            }
+        
+            if (fluid_player_play(player) != FLUID_OK) {
+                puts("Failed to play MIDI file");
+                goto err;
+            }
+
+            renderer = new_fluid_file_renderer(synth);
+            if(renderer == NULL){
+                puts("Failed to create renderer");
+                goto err;
+            }
+
+            std::cout << "Player status: " << fluid_player_get_status(player) << std::endl;
+            while(fluid_player_get_status(player) == FLUID_PLAYER_PLAYING){
+                if(fluid_file_renderer_process_block(renderer) != FLUID_OK){
+                    break;
+                }
+            }
+            Encoder encoder = Encoder(WAV);
+            encoder.wav2mp3();
+            fluid_player_stop(player);
+            fluid_player_join(player);
+            err:
+                clean_up(settings,synth,player);
         }
 };

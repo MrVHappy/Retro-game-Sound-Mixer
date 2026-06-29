@@ -47,6 +47,8 @@ class MidiProcessor{
         public:
             MidiProcessor(SoundFont sound_font, std::string file);
 
+            void clean_up(fluid_settings_t* settings,fluid_synth_t* synth, fluid_player_t*player);
+            
             void clean_up(fluid_settings_t* settings,fluid_synth_t* synth,fluid_audio_driver_t* adriver,fluid_player_t* player);
 
             int adjust_instrument(int instrument,smf::MidiEvent& event, int event_index, int track, smf::MidiFile midi_file);
@@ -54,6 +56,8 @@ class MidiProcessor{
             std::string midi_processing();
 
             void view_midi_info();
+
+            void render();
 };
 
 #endif

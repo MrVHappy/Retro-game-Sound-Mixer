@@ -16,9 +16,12 @@ add_subdirectory(midifile)
 
 add_executable(RetroSoundMixer
     src/main.cpp
+    src/Encoder.cpp
+    src/MidiProcessor.cpp
+    src/SoundFont.cpp
 )
 
-target_include_directories(RetroSoundMixer PRIVATEy
+target_include_directories(RetroSoundMixer PRIVATE
     midifile/include
 )
 

@@ -15,6 +15,9 @@
 #include <sndfile.h>
 #include <lame/lame.h>
 #include <fstream>
+#include "Encoder.h"
+#include "MidiProcessor.h"
+#include "SoundFont.h"
 
 #if defined(_WIN32)
 #define NOMINMAX 
