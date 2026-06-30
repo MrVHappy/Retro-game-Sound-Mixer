@@ -11,6 +11,7 @@
 #include <fstream>
 #include "SoundFont.h"
 #include "Encoder.h"
+#include "MidiProcessor.h"
 
 #if defined(_WIN32)
 #define NOMINMAX 
@@ -33,19 +34,9 @@
 #endif
 #include <vector>
 
-
-class MidiProcessor{
-    private:
-        
-        const std::string DESTINATION = "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/Saved songs/";
-        std::string file;
-
-        SoundFont sound_font;
-
-    public:
         // constructor
-        MidiProcessor(SoundFont sound_font, std::string file): sound_font(sound_font), file(file){}
-        void clean_up(fluid_settings_t* settings,fluid_synth_t* synth, fluid_player_t*player){
+        MidiProcessor::MidiProcessor(SoundFont sound_font, std::string file): sound_font(sound_font), file(file){}
+        void MidiProcessor::clean_up(fluid_settings_t* settings,fluid_synth_t* synth, fluid_player_t*player){
             if (player != NULL) {
                 delete_fluid_player(player);
             }
@@ -56,7 +47,7 @@ class MidiProcessor{
                 delete_fluid_settings(settings);
             }
         }
-        void clean_up(fluid_settings_t* settings,fluid_synth_t* synth,fluid_audio_driver_t* adriver,fluid_player_t* player){
+        void MidiProcessor::clean_up(fluid_settings_t* settings,fluid_synth_t* synth,fluid_audio_driver_t* adriver,fluid_player_t* player){
             if (player != NULL) {
                 delete_fluid_player(player);
             }
@@ -71,7 +62,7 @@ class MidiProcessor{
             }
         }
         
-        int adjust_instrument(int instrument,smf::MidiEvent& event, int event_index, int track, smf::MidiFile midi_file){
+        int MidiProcessor::adjust_instrument(int instrument,smf::MidiEvent& event, int event_index, int track, smf::MidiFile midi_file){
             std::string choice;
             std::cout << "IN THE ADJUSTING STAGE" << std::endl;
             // create a temporary midi file
@@ -186,7 +177,7 @@ class MidiProcessor{
 
         }
 
-        std::string midi_processing(){
+        std::string MidiProcessor::midi_processing(){
             // reads the midi file to and checks if the file exists
             smf::MidiFile midi_file;
             if(!midi_file.read(this->file)){
@@ -304,7 +295,7 @@ class MidiProcessor{
         }
 
 
-        void view_midi_info(){
+        void MidiProcessor::view_midi_info(){
             // reads the MIDI file and extracts information about the tracks, events, and timing
             smf::MidiFile midi_file;
             // checks to see if the file was read successfully, if not print an error message and return
@@ -410,7 +401,7 @@ class MidiProcessor{
             std::cout << "Total number of note off events: " << note_off_count << std::endl;
             std::cout << "Total number of instrument change events: " << instrument_change_count << std::endl;
         }
-        void render(){
+        void MidiProcessor::render(){
             // setting up midi player
             fluid_settings_t* settings = NULL;
             fluid_synth_t* synth = NULL;
@@ -422,7 +413,8 @@ class MidiProcessor{
             // checks to see if the settings has been created successfully
             if (settings == NULL) {
                 puts("settings creation failed");
-                goto err;
+                clean_up(settings,synth,player);
+                return;
             }
             // identify where the file location of the sound file
             fluid_settings_setstr(settings,"audio.file.name",WAV);
@@ -436,7 +428,8 @@ class MidiProcessor{
             // checks to see if the synth has been created successfully
             if (synth == NULL) {
                 puts("synth creation failed");
-                goto err;
+                clean_up(settings,synth,player);
+                return;
             }
 
             // Load SoundFont
@@ -446,30 +439,35 @@ class MidiProcessor{
             // checks to see if the sound font has been created successfully
             if (sfont_ID == FLUID_FAILED) {
                 puts("Loading SoundFont failed! Check the file path and try again.");
-                goto err;
+                clean_up(settings,synth,player);
+                return;
             }
 
             // create the player
             player = new_fluid_player(synth);
             if (player == NULL){
                 puts("Failed to create player");
-                goto err;
+                clean_up(settings,synth,player);
+                return;
             }
 
             if (fluid_player_add(player, file.c_str()) != FLUID_OK) {
                 puts("Failed to add MIDI file to player! Check the file path and try again.");
-                goto err;
+                clean_up(settings,synth,player);
+                return;
             }
         
             if (fluid_player_play(player) != FLUID_OK) {
                 puts("Failed to play MIDI file");
-                goto err;
+                clean_up(settings,synth,player);
+                return;
             }
 
             renderer = new_fluid_file_renderer(synth);
             if(renderer == NULL){
                 puts("Failed to create renderer");
-                goto err;
+                clean_up(settings,synth,player);
+                return;
             }
 
             std::cout << "Player status: " << fluid_player_get_status(player) << std::endl;
@@ -482,7 +480,6 @@ class MidiProcessor{
             encoder.wav2mp3();
             fluid_player_stop(player);
             fluid_player_join(player);
-            err:
+
                 clean_up(settings,synth,player);
         }
-};

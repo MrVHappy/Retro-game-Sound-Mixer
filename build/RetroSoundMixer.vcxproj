@@ -422,6 +422,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\src\main.cpp" />
+    <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\src\Encoder.cpp" />
+    <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\src\MidiProcessor.cpp" />
+    <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\src\SoundFont.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

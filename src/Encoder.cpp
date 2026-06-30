@@ -9,6 +9,7 @@
 #include <sndfile.h>
 #include <lame/lame.h>
 #include <fstream>
+#include "Encoder.h"
 
 #if defined(_WIN32)
 #define NOMINMAX 
@@ -31,18 +32,12 @@
 #endif
 #include <vector>
 
-class Encoder{
-    private:
-        std::string file_location;
-        const std::string MP3_LOC = "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/MP3/example.mp3";
-        
 
-    public:
         // constructor
-        Encoder(std::string file_location){
+        Encoder::Encoder(std::string file_location){
             this->file_location = file_location;
         }
-        void clean_up(SNDFILE *file, FILE *output, lame_t encoder){
+        void Encoder::clean_up(SNDFILE *file, FILE *output, lame_t encoder){
             if (file != NULL)
                 sf_close(file);
             if (output != NULL)
@@ -52,7 +47,7 @@ class Encoder{
         }
 
 
-        void wav2mp3(){
+        void Encoder::wav2mp3(){
             // the buffer size for each samples
             const short BUFFER_SIZE = 8192;
             // static short int data[BUFFER_SIZE];
@@ -122,4 +117,3 @@ class Encoder{
             // clean up
             clean_up(file,output,encoder);
     }
-};

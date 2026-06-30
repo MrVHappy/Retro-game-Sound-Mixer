@@ -486,14 +486,22 @@ void view_midi_info(const std::string file){
 
 int main() {
     // displays the instruments
-    display_instruments();
+    // display_instruments();
     std::string file;
     std::string sound_font_file;
     // promts user to enter file location of midi and sound font file
     std::cout << "Please enter file location of MIDI file" << std::endl;
     std::getline(std::cin, file);
+    
     std::cout << "Please enter file location of sound font file" << std::endl;
     std::getline(std::cin,sound_font_file);
+
+    // create classes
+    SoundFont sound_font = SoundFont(sound_font_file);
+    MidiProcessor processor = MidiProcessor(sound_font, file);
+
+    // display avaliable instruments
+    sound_font.display_instruments();
     
     // asks user if they would like to see midi file information
     std::cout << "Would you like to view information about the MIDI file before playing? (y/n)" << std::endl;
@@ -501,109 +509,111 @@ int main() {
     std::getline(std::cin, view_info);
     if (view_info == "y" || view_info == "Y"){
         // display file information if typed yes
-        view_midi_info(file);
-        
+        processor.view_midi_info();
     }
 
     // modifies the midi file
-    file = midi_processing(file,sound_font_file);
+    processor.midi_processing();
+    // file = midi_processing(file,sound_font_file);
     // displays new file location
     std::cout << file << std::endl;
+
+    processor.render();
     
-    // setting up midi player
-    fluid_settings_t* settings = NULL;
-    fluid_synth_t* synth = NULL;
-    fluid_audio_driver_t* adriver = NULL;
-    fluid_player_t* player = NULL;
-    fluid_file_renderer_t* renderer = NULL;
+//     // setting up midi player
+//     fluid_settings_t* settings = NULL;
+//     fluid_synth_t* synth = NULL;
+//     fluid_audio_driver_t* adriver = NULL;
+//     fluid_player_t* player = NULL;
+//     fluid_file_renderer_t* renderer = NULL;
 
-    std::list<int> sequence;
-    int sfont_ID, i, key;
-    int option = 4;
-    std::string input;
-    const char* FONT_TYPE = nullptr;
+//     std::list<int> sequence;
+//     int sfont_ID, i, key;
+//     int option = 4;
+//     std::string input;
+//     const char* FONT_TYPE = nullptr;
             
-    // Create settings
-    settings = new_fluid_settings();
-    // checks to see if the settings has been created successfully
-    if (settings == NULL) {
-        puts("settings creation failed");
-        goto err;
-    }
-    // identify where the file location of the sound file
-    fluid_settings_setstr(settings,"audio.file.name",WAV);
+//     // Create settings
+//     settings = new_fluid_settings();
+//     // checks to see if the settings has been created successfully
+//     if (settings == NULL) {
+//         puts("settings creation failed");
+//         goto err;
+//     }
+//     // identify where the file location of the sound file
+//     fluid_settings_setstr(settings,"audio.file.name",WAV);
 
-    // use the number of samples processed as timing source rather than sys timer
-    fluid_settings_setstr(settings, "player.timing-source", "sample");
-    // no need to pin sample data due to being a non-realtime scenario
-    fluid_settings_setint(settings,"synth.lock-memory",0);
-    // Create synth
-    synth = new_fluid_synth(settings);
-    // checks to see if the synth has been created successfully
-    if (synth == NULL) {
-        puts("synth creation failed");
-        goto err;
-    }
+//     // use the number of samples processed as timing source rather than sys timer
+//     fluid_settings_setstr(settings, "player.timing-source", "sample");
+//     // no need to pin sample data due to being a non-realtime scenario
+//     fluid_settings_setint(settings,"synth.lock-memory",0);
+//     // Create synth
+//     synth = new_fluid_synth(settings);
+//     // checks to see if the synth has been created successfully
+//     if (synth == NULL) {
+//         puts("synth creation failed");
+//         goto err;
+//     }
 
-    // Load SoundFont
-    std::cout << "Loading SF2..." << std::endl;
+//     // Load SoundFont
+//     std::cout << "Loading SF2..." << std::endl;
 
-    sfont_ID = fluid_synth_sfload(synth,sound_font_file.c_str(), 1);
-    // checks to see if the sound font has been created successfully
-    if (sfont_ID == FLUID_FAILED) {
-        puts("Loading SoundFont failed! Check the file path and try again.");
-        goto err;
-    }
+//     sfont_ID = fluid_synth_sfload(synth,sound_font_file.c_str(), 1);
+//     // checks to see if the sound font has been created successfully
+//     if (sfont_ID == FLUID_FAILED) {
+//         puts("Loading SoundFont failed! Check the file path and try again.");
+//         goto err;
+//     }
 
-    // create the player
-    player = new_fluid_player(synth);
-    if (player == NULL){
-        puts("Failed to create player");
-        goto err;
-    }
+//     // create the player
+//     player = new_fluid_player(synth);
+//     if (player == NULL){
+//         puts("Failed to create player");
+//         goto err;
+//     }
 
-    if (fluid_player_add(player, file.c_str()) != FLUID_OK) {
-        puts("Failed to add MIDI file to player! Check the file path and try again.");
-        goto err;
-    }
+//     if (fluid_player_add(player, file.c_str()) != FLUID_OK) {
+//         puts("Failed to add MIDI file to player! Check the file path and try again.");
+//         goto err;
+//     }
  
-    if (fluid_player_play(player) != FLUID_OK) {
-        puts("Failed to play MIDI file");
-        goto err;
-    }
+//     if (fluid_player_play(player) != FLUID_OK) {
+//         puts("Failed to play MIDI file");
+//         goto err;
+//     }
 
-    renderer = new_fluid_file_renderer(synth);
-    if(renderer == NULL){
-        puts("Failed to create renderer");
-        goto err;
-    }
+//     renderer = new_fluid_file_renderer(synth);
+//     if(renderer == NULL){
+//         puts("Failed to create renderer");
+//         goto err;
+//     }
 
-    std::cout << "Player status: " << fluid_player_get_status(player) << std::endl;
-    while(fluid_player_get_status(player) == FLUID_PLAYER_PLAYING){
-        if(fluid_file_renderer_process_block(renderer) != FLUID_OK){
-            break;
-        }
-    }
-    wav2mp3(WAV);
-    fluid_player_stop(player);
-    fluid_player_join(player);
-// clean up
-err:
-    if(renderer != NULL){
-        delete_fluid_file_renderer(renderer);
-    }
-    if (player != NULL) {
-        delete_fluid_player(player);
-    }
-    if (adriver != NULL) {
-        delete_fluid_audio_driver(adriver);
-    }
-    if (synth != NULL) {
-        delete_fluid_synth(synth);
-    }
-    if (settings != NULL) {
-        delete_fluid_settings(settings);
-    }
+//     std::cout << "Player status: " << fluid_player_get_status(player) << std::endl;
+//     while(fluid_player_get_status(player) == FLUID_PLAYER_PLAYING){
+//         if(fluid_file_renderer_process_block(renderer) != FLUID_OK){
+//             break;
+//         }
+//     }
+//     wav2mp3(WAV);
+//     fluid_player_stop(player);
+//     fluid_player_join(player);
+// // clean up
+// err:
+//     if(renderer != NULL){
+//         delete_fluid_file_renderer(renderer);
+//     }
+//     if (player != NULL) {
+//         delete_fluid_player(player);
+//     }
+//     if (adriver != NULL) {
+//         delete_fluid_audio_driver(adriver);
+//     }
+//     if (synth != NULL) {
+//         delete_fluid_synth(synth);
+//     }
+//     if (settings != NULL) {
+//         delete_fluid_settings(settings);
+//     }
     
     return 0;
 }

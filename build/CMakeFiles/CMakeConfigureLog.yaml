@@ -4190,3 +4190,1107 @@ events:
         - "C:/Program Files (x86)/RetroSoundMixer"
       CMAKE_FIND_ROOT_PATH: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug;C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vcpkg/installed/x64-windows/share/mp3lame/mp3lame-config.cmake:6 (find_library)"
+      - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "library"
+    variable: "_mp3lame_rel_lib"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "LAST"
+      SearchAppBundle: "LAST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "libmp3lame"
+      - "libmp3lame-static"
+      - "mp3lame"
+    candidate_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+    searched_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+    found: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/libmp3lame.lib"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/manual-link"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/manual-link"
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sebastian\\.dotnet\\tools"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/RetroSoundMixer/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug;C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{LIB}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\lib\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\lib\\um\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.26100.0\\ucrt\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\lib\\10.0.26100.0\\\\um\\x64"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vcpkg/installed/x64-windows/share/mp3lame/mp3lame-config.cmake:7 (find_library)"
+      - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "library"
+    variable: "_mp3lame_dbg_lib"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "LAST"
+      SearchAppBundle: "LAST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "libmp3lame"
+      - "libmp3lame-static"
+      - "mp3lame"
+    candidate_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+    found: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/libmp3lame.lib"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/manual-link"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/manual-link"
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sebastian\\.dotnet\\tools"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/RetroSoundMixer/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug;C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{LIB}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\lib\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\lib\\um\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.26100.0\\ucrt\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\lib\\10.0.26100.0\\\\um\\x64"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vcpkg/installed/x64-windows/share/mp3lame/mp3lame-config.cmake:6 (find_library)"
+      - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "library"
+    variable: "_mp3lame_rel_lib"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "LAST"
+      SearchAppBundle: "LAST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "libmp3lame"
+      - "libmp3lame-static"
+      - "mp3lame"
+    candidate_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+    searched_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+    found: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/libmp3lame.lib"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/manual-link"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/manual-link"
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sebastian\\.dotnet\\tools"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/RetroSoundMixer/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug;C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{LIB}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\lib\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\lib\\um\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.26100.0\\ucrt\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\lib\\10.0.26100.0\\\\um\\x64"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vcpkg/installed/x64-windows/share/mp3lame/mp3lame-config.cmake:7 (find_library)"
+      - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "library"
+    variable: "_mp3lame_dbg_lib"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "LAST"
+      SearchAppBundle: "LAST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "libmp3lame"
+      - "libmp3lame-static"
+      - "mp3lame"
+    candidate_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+    found: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/libmp3lame.lib"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/manual-link"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/manual-link"
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sebastian\\.dotnet\\tools"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/RetroSoundMixer/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug;C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{LIB}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\lib\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\lib\\um\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.26100.0\\ucrt\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\lib\\10.0.26100.0\\\\um\\x64"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vcpkg/installed/x64-windows/share/mp3lame/mp3lame-config.cmake:6 (find_library)"
+      - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "library"
+    variable: "_mp3lame_rel_lib"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "LAST"
+      SearchAppBundle: "LAST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "libmp3lame"
+      - "libmp3lame-static"
+      - "mp3lame"
+    candidate_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+    searched_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+    found: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/libmp3lame.lib"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/manual-link"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/manual-link"
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sebastian\\.dotnet\\tools"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/RetroSoundMixer/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug;C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{LIB}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\lib\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\lib\\um\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.26100.0\\ucrt\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\lib\\10.0.26100.0\\\\um\\x64"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vcpkg/installed/x64-windows/share/mp3lame/mp3lame-config.cmake:7 (find_library)"
+      - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "library"
+    variable: "_mp3lame_dbg_lib"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "LAST"
+      SearchAppBundle: "LAST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "libmp3lame"
+      - "libmp3lame-static"
+      - "mp3lame"
+    candidate_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+    found: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/libmp3lame.lib"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/manual-link"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/manual-link"
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sebastian\\.dotnet\\tools"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/RetroSoundMixer/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug;C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{LIB}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\lib\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\lib\\um\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.26100.0\\ucrt\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\lib\\10.0.26100.0\\\\um\\x64"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vcpkg/installed/x64-windows/share/mp3lame/mp3lame-config.cmake:6 (find_library)"
+      - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "library"
+    variable: "_mp3lame_rel_lib"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "LAST"
+      SearchAppBundle: "LAST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "libmp3lame"
+      - "libmp3lame-static"
+      - "mp3lame"
+    candidate_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+    searched_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+    found: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/libmp3lame.lib"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/manual-link"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/manual-link"
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sebastian\\.dotnet\\tools"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/RetroSoundMixer/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug;C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{LIB}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\lib\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\lib\\um\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.26100.0\\ucrt\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\lib\\10.0.26100.0\\\\um\\x64"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vcpkg/installed/x64-windows/share/mp3lame/mp3lame-config.cmake:7 (find_library)"
+      - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "library"
+    variable: "_mp3lame_dbg_lib"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "LAST"
+      SearchAppBundle: "LAST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "libmp3lame"
+      - "libmp3lame-static"
+      - "mp3lame"
+    candidate_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+    found: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/libmp3lame.lib"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/manual-link"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/manual-link"
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sebastian\\.dotnet\\tools"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/RetroSoundMixer/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug;C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{LIB}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\lib\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\lib\\um\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.26100.0\\ucrt\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\lib\\10.0.26100.0\\\\um\\x64"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vcpkg/installed/x64-windows/share/mp3lame/mp3lame-config.cmake:6 (find_library)"
+      - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "library"
+    variable: "_mp3lame_rel_lib"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "LAST"
+      SearchAppBundle: "LAST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "libmp3lame"
+      - "libmp3lame-static"
+      - "mp3lame"
+    candidate_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+    searched_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+    found: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/libmp3lame.lib"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/manual-link"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/manual-link"
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sebastian\\.dotnet\\tools"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/RetroSoundMixer/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug;C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{LIB}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\lib\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\lib\\um\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.26100.0\\ucrt\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\lib\\10.0.26100.0\\\\um\\x64"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vcpkg/installed/x64-windows/share/mp3lame/mp3lame-config.cmake:7 (find_library)"
+      - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "library"
+    variable: "_mp3lame_dbg_lib"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "LAST"
+      SearchAppBundle: "LAST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "libmp3lame"
+      - "libmp3lame-static"
+      - "mp3lame"
+    candidate_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+    found: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/libmp3lame.lib"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/manual-link"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/manual-link"
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sebastian\\.dotnet\\tools"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/RetroSoundMixer/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug;C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{LIB}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\lib\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\lib\\um\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.26100.0\\ucrt\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\lib\\10.0.26100.0\\\\um\\x64"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vcpkg/installed/x64-windows/share/mp3lame/mp3lame-config.cmake:6 (find_library)"
+      - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "library"
+    variable: "_mp3lame_rel_lib"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "LAST"
+      SearchAppBundle: "LAST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "libmp3lame"
+      - "libmp3lame-static"
+      - "mp3lame"
+    candidate_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+    searched_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/"
+    found: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/libmp3lame.lib"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/manual-link"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/manual-link"
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sebastian\\.dotnet\\tools"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/RetroSoundMixer/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug;C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{LIB}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\lib\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\lib\\um\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.26100.0\\ucrt\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\lib\\10.0.26100.0\\\\um\\x64"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vcpkg/installed/x64-windows/share/mp3lame/mp3lame-config.cmake:7 (find_library)"
+      - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "library"
+    variable: "_mp3lame_dbg_lib"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "LAST"
+      SearchAppBundle: "LAST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "libmp3lame"
+      - "libmp3lame-static"
+      - "mp3lame"
+    candidate_directories:
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+      - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/"
+    found: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/libmp3lame.lib"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug/lib/manual-link"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/lib/manual-link"
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug"
+        - "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sebastian\\.dotnet\\tools"
+        - "C:\\Users\\Sebastian\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/RetroSoundMixer"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/RetroSoundMixer/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows/debug;C:/Users/Sebastian/OneDrive/Documents/GitHub/Retro-game-Sound-Mixer/vcpkg/installed/x64-windows"
+      ENV{LIB}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\lib\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\lib\\um\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.26100.0\\ucrt\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\lib\\10.0.26100.0\\\\um\\x64"
+...

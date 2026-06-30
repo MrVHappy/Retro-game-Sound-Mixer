@@ -15,7 +15,7 @@ class SoundFont{
         std::map<int,bool> instruments;
     public:
         // constructor
-        SoundFont(char* file);
+        SoundFont(std::string file);
         std::string get_file()const;
         bool verify_instrument(int instrument_num)const;
         void display_instruments();

@@ -4,6 +4,15 @@
     <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\src\Encoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\src\MidiProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\src\SoundFont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\Sebastian\OneDrive\Documents\GitHub\Retro-game-Sound-Mixer\CMakeLists.txt" />
